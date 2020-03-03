@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: square;
+        }
+        ol{
+            list-style-type: upper-roman;
+        }
+        table{
+            font-family: 'Times New Roman', Times, serif;border: 1px solid black;width: 100%;text-align: left;border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color:wheat
+        }
+        ul#menu li{
+            display: inline;
+        }
+        ul#menu{
+            padding: 0;
+        }
+        ul#menu li a:link{
+            background-color: black;color: white;padding: 10px 20px;border-radius: 4px 4px 0 0;
+        }
+        ul#menu li a:hover{
+            background-color: orange;
+        }
+
+        div.city{
+            border: 1px solid black;margin: 10px;padding: 15px;width: 300px;height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>AN UNORDERED LIST</h2>
+    <ul>
+        <li>cup</li>
+        <li>spoon</li>
+        <li>milk</li>
+    </ul>
+    <br>
+    <h2>ORDERED LIST</h2>
+    <ol>
+        <li>cup</li>
+        <li>terminator</li>
+        <li>skynet</li>
+        <li>doomsday</li>
+    </ol>
+    <dl>
+        <dt>London</dt>
+        <dd>-This is a city in the United Kingdom.</dd>
+        <dt>Madrid</dt>
+        <dd>-This is a city in Spain.</dd>
+    </dl>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <ul>
+            <li style="list-style-type: circle;">Black tea</li>
+            <li style="list-style-type: circle;">Green tea</li>
+        </ul>
+        <li>Milk</li>
+    </ul>
+
+<table>
+    <tr>
+        <th>continents</th><th>country</th><th colspan="2">population</th>
+    </tr>
+    <tr>
+        <td rowspan="2">africa</td><td>nigeria</td><td>180M</td><td>190M</td>
+    </tr>
+    <tr>
+        <td>ghana</td><td>160M</td><td>150M</td>
+    </tr>
+    <tr>
+        <td rowspan="2">europe</td><td>england</td><td>90M</td><td>100M</td>
+    </tr>
+    <tr>
+        <td>germany</td><td>69M</td><td>79M</td>
+    </tr>
+    <tr>
+        <td>asia</td><td>china</td><td>120M</td><td>130M</td>
+    </tr>
+    <tr>
+        <td>america</td><td>canada</td><td>60M</td><td>70M</td>
+    </tr>
+</table>
+ <ul id="menu">
+     <li><a href="default.html">HTML</a></li>
+     <li><a href="../CSS/default.html">CSS</a></li>
+     <li><a href="../JavaScript/default.html">JavaScript</a></li>
+     <li><a href="../PHP/default.html">PHP</a></li>
+ </ul>
+
+
+ <h1>Responsive Web Design</h1>
+ <h2>Resize this responsive web page</h2>
+
+ <div class="city">
+     <h2>London</h2>
+     <p>London is the capital city of England.</p>
+     <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+ </div>
+
+ <div class="city">
+     <h2>Paris</h2>
+     <p>Paris is the capital of France.</p>
+     <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+ </div>
+
+ <div class="city">
+     <h2>Tokyo</h2>
+     <p>Tokyo is the capital of Japan.</p>
+     <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+ </div>
+
+ <div class="city">
+     <h2>View Source</h2>
+     <p>View the source code to see how this page was built.</p>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <h2 style="text-align: center;">Image Map</h2>
+            <p>Click on the various object in the picture to read more about the object.</p>
+            <img src="workplace.jpg" alt="workplace" usemap="#workmap">
+            <map name="workmap">
+                <area shape="rect" coords="40, 40, 260, 350" href="computer.htm" alt="computer" onclick="myFunction2()"><script> function myFunction2() {alert("you clicked the computer!")}</script><area shape="rect" coords="290, 150, 350, 250" href="phone.htm" alt="phone"><area shape="circle" coords="350, 290, 44" href="coffee.htm" alt="coffee" onclick="myFunction()">
+                <script>function myFunction() {
+                    alert ("you clicked the coffee cup!");
+                } 
+                </script>
+            </map>
+        </body>
+    </head>
+</html>
