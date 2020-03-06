@@ -4,19 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p#top{
+            width: 360px; margin: 30px; color: rgb(50, 80, 250);
+        }
+
+        p#menu{
+            width: 390px; margin: 30px; color: rgb(50, 80, 250);
+        }
+        strong{
+            color: blue;
+        }
+        a:link#note{
+            margin: 30px;
+        }
+        div{
+            margin: 30px;
+        }
+        body{
+            background-image: url(un_INSPIRA_LOGO_ENG.png);background-position: center;background-repeat: no-repeat;background-size: 50%;
+        }
+        strong#t01{
+            color: black;font-size: small;
+        }
+    
+
+
+
+
+    </style>
 </head>
 <body>
+    <a href="https://inspira.un.org"><img src="un_INSPIRA_LOGO_ENG.png" alt="inspira logo"></a>
+    <br><br><br><br>
+    <p id="top">Thank you for interst in joining the United Nations. All applicants to our job openings must have an inspira account to apply. if you do not have an account, please fill out the information below to register.</p>
+    <p id="menu">If you are a United Nations staff member with a permanent, continuing, fixed-term or temporary appointment, you do not need to register. You will be able to login with your internal UN account. For further guidance, please refer to the <a href=""> <strong>Manual for the Applicant.</strong> </a> </p>
+    <a href="https://inspira.un.org/psp/PUNA1J/?cmd=login&languageCd=ENG" style="color: blue;" id="note">Return to Previous Page</a>
+    <p style="margin-left: 30px;">External Applicant Registration</p>
+
     <div>
-        <h2>The Picture Element</h2>
-    <picture>
-        <source media="(min-width: 650px)" srcset="GBWA-20171126104942.jpg">
-            <source media="(min-width: 450px)" srcset="GBWA-20171203212627.jpg">
-                <img src="google.png" alt="google" style="width: auto;">
-                <p>this is an example of speech</p>
-        
-    </picture>
+        <form action="www.w3schools.com" method="POST" enctype="text/plain" novalidate autocomplete="off">
+            <fieldset>
+                <legend>Enter Registration information</legend>
+                Name and Date of Birth once entered cannot be changed <br>
+                *Given Name: <br>
+                <input type="text" name="Given Name" Value=""> <br>
+                 Middle Name: <br>
+                 <input type="text" name="Middle Name" value=""> <br>
+                *Family Name: <br>
+                <input type="text" name="Family Name" value=""> <br>
+                User ID: <br>
+                <input type="text" name="User ID" value=""> <br>
+                *Password: <br>
+                <input type="text" name="Password" value=""> <br>
+                *Confirm Password: <br>
+                <input type="text" name="Confirm Password" value=""> <br>
+                *Primary Email: <br>
+                <input type="text" name="Primary Email" value=""> <br>
+                Alternate Email: <br>
+                <input type="text" name="Alternate Email" value=""> <br>
+                *Date of Birth: <br>
+                <input type="text" name="Date of Birth" value="">
+                DD/MM/YYYY
+                <br><br>
+                
+                
+    
+            </fieldset><br>
+            <input type="submit" value="Register">
+            <a href="https://inspira.un.org/psp/PUNA1J/?cmd=login&languageCd=ENG" style="color: blue;">Return to Previous Page</a><br>
+        </form>
 
     </div>
+
+    
+    <p style="margin-left: 30px;">*Required Information</p>
+    <p style="margin-left: 30px;"> <strong id="t01">For technical support, click on</strong>  <a href="http://careers.un.org/support.aspx" style="color: blue;">Contact us</a></p>
+
+
+    
+ 
     
     
 </body>
