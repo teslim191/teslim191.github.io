@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;border-collapse: collapse;padding: 8px; text-align: left;font-family: 'Times New Roman', Times, serif;border-spacing: 5px;
+        }
+        
+        table{
+            width: 100%;
+        }
+        a:link{
+            background-color: green; color: white;padding: 8px;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        table#t01{
+            background-color: blue;
+        }
+        table#t01 tr:nth-child(even){
+            background-color: chartreuse;
+        }
+        table#t01 tr:nth-child(odd){
+            background-color: cyan;
+        }
+        table#t01 th{
+            background-color: black;color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic Html Table</h2>
+    <table>
+        <caption>Names of Students</caption>
+        <tr>
+            <th>First Name</th><th>Last Name</th><th colspan="2">Age</th>
+        </tr>
+        <tr>
+            <td>jack</td><td>jill</td><td>50</td><td>90</td>
+        </tr>
+        <tr>
+            <td>Eve</td><td>jackson</td><td>94</td>
+        </tr>
+        <tr>
+            <td>john</td><td>doe</td><td>80</td>
+        </tr>
+
+    </table>
+    <br>
+    <a href="www.w3schools.com">Try it Yourself>></a>
+    <br>
+    <br>
+    <table id="t01">
+        <caption>Names of Students</caption>
+        <tr>
+            <th>First Name</th><th>Last Name</th><th colspan="2">Age</th>
+        </tr>
+        <tr>
+            <td>jack</td><td>jill</td><td>50</td><td>90</td>
+        </tr>
+        <tr>
+            <td>Eve</td><td>jackson</td><td>94</td>
+        </tr>
+        <tr>
+            <td>john</td><td>doe</td><td>80</td>
+        </tr>
+
+    </table>
+    <table>
+        <tr>
+        <th>Premier League</th><td>arsenal</td>
+       </tr>
+       <tr>
+           <th>city</th><td>london</td>
+       </tr>
+       <tr>
+           <th>language</th><td>english</td>
+       </tr>
+    </table>
+</body>
+</html>
