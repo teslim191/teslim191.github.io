@@ -22,7 +22,7 @@
             margin: 30px;
         }
         body{
-            background-image: url(un_INSPIRA_LOGO_ENG.png);background-position: center;background-repeat: no-repeat;background-size: 50%;
+            background-image: url(un_INSPIRA_LOGO_ENG.png);background-position: center;background-repeat: no-repeat;background-size: 70%;background-color: darkgray;
         }
         strong#t01{
             color: black;font-size: small;
@@ -43,66 +43,71 @@
     <p style="margin-left: 30px;">External Applicant Registration</p>
 
     <div>
-        <form action="https:www.w3schools.com" method="POST" enctype="application/x-www-form-urlencoded" novalidate autocomplete="off" target="_blank">
+        <form action="MAILTO:teslimjimoh191@gmail.com" method="POST" enctype="text/plain" novalidate autocomplete="on" target="_blank">
             <fieldset>
                 <legend>Enter Registration information</legend>
-                select your school: <br>
-                <input list="schools" name="school">
-                <datalist id="schools">
-                <option value="unilorin">
-                <option value="uniabj">
-                <option value="kwasu">
-                <option value="fut minna">
+                look at these : <br>
+                <input list="wizards" name="wizard">
+                <datalist id="wizards">
+                <option value="voldemort">
+                <option value="snape">
+                <option value="sirius black">
+                <option value="dumbledore">
 
                 </datalist><br>
                 Name and Date of Birth once entered cannot be changed <br>
                 *Given Name: <br>
                 <input type="text" name="Given Name" Value="" pattern="[A-Za-z]{3}" title="your name"> <br>
                  Middle Name: <br>
-                 <input type="text" name="Middle Name" value="" required> <br>
+                 <input type="text" name="Middle Name" value=""> <br>
                 *Family Name: <br>
-                <input type="text" name="Family Name" value=jimmy> <br>
+                <input type="text" name="Family Name" value=> <br>
                 User ID: <br>
-                <input type="text" name="User ID" value="" maxlength="2"> <br>
+                <input type="text" name="User ID" value="" maxlength="20" placeholder="User ID"> <br>
                 *Password: <br>
-                <input type="password" name="password" value="" placeholder="password"> <br>
+                <input type="password" name="password" value="" placeholder="password" required> <br>
                 *Confirm Password: <br>
-                <input type="password" name="password" value=""> <br>
+                <input type="password" name="password" value="" required> <br>
                 *Primary Email: <br>
-                <input type="text" name="Primary Email" value="" placeholder="email"> <br>
+                <input type="email" name="email" value="" placeholder="Email" required> <br>
                 Alternate Email: <br>
-                <input type="text" name="Alternate Email" value=""required> <br>
+                <input type="email" name="Alternate email" value="" required> <br>
                 *Date of Birth: <br>
                <input type="date" name="date of birth" value="" min="2010-01-01"> <br>
-               select image: <br>
-               <input type="file" name="img" multiple> <br>
-               point: <br>
-               <input type="number" name="point" step="3" max="90"> 
+                *CV/Resume: <br>
+               <input type="file" name="img" multiple required> <br>
+               *CGPA: <br>
+               <input type="number" name="point" min="1.0" max="5.0" required> 
                 <br><br>
                 
                 
     
             </fieldset><br>
-            <input type="submit" value="Register"> <br>
+            <input type="submit" value="Register"> <b>(Make sure you click on register)</b> <br>
             <input type="image" src="un_INSPIRA_LOGO_ENG.png" alt="submit" height="48px" width="90px">
             <a href="https://inspira.un.org/psp/PUNA1J/?cmd=login&languageCd=ENG" style="color: blue;">Return to Previous Page</a><br>
         </form>
 
     </div>
 
-    
+
+
     <p style="margin-left: 30px;">*Required Information</p>
     <p style="margin-left: 30px;"> <strong id="t01">For technical support, click on</strong>  <a href="http://careers.un.org/support.aspx" style="color: blue;">Contact us</a></p>
 
 
-    <form action="www.w3schools.com">
-        <textarea name="message" cols="30" rows="10">Arsenal FC is a Football Club located in North London. It greatest manager is Arsene Wenger.
-        </textarea> <br>
-        <input type="submit" value="submit">
-    </form>
+    
 
-    <button onclick="alert('you just clicked me')">click</button>
-    <input type="button" onclick="alert('Hello World')" value="Click Me">
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">Teslim.</p>
+
+<script>
+function myFunction() { 
+    document.getElementById("demo").innerHTML = "Jimoh";
+}
+</script>
+    <input type="button" onclick="alert('FUCK ME!!!')" value="Click Me">
 
     <form action="www.google.com">
         <input list="browsers" name="browser">
@@ -116,15 +121,6 @@
         <input type="submit" value="submit">
     </form>
 
-    <form action="www.google.com">
-        Username:
-        <input type="text" name="Username" value=""><br>
-        Encryption: <keygen name="security">
-            <br><br>
-            <input type="submit" value="submit">
-    </form>
-
-
     <form action="http://www.w3schools.com/html/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
         0
         <input type="range" name="a" id="a" value="50">
@@ -136,9 +132,12 @@
     
     </form>
     <form action="action.php">
-        <input type="checkbox" name="vehicle " value="bike">I have a bike <br>
-        <input type="checkbox" name="vehicle2" value="car">I have a car <br>
-        <input type="submit" value="submit">
+        <input type="checkbox" name="phone" value="Iphone">I have an Iphone <br>
+        <input type="checkbox" name="phone2" value="Andriod">I have an Andriod <br>
+        <input type="checkbox" name="phone3" value="Nothing">I have nothing😁 <br>
+        <input type="button" onclick="alert('LMFAO...!!!')" value="Click Me">
+
+        
     </form> <br><br>
 
     <form action="action.php" method="POST" novalidate enctype="text/plain">
@@ -166,46 +165,23 @@
         <input type="submit" value="submit">
         <input type="submit" value="submit to a new window" formtarget="_blank" formenctype="multipart/form-data">
 
-    </form>
+    </form> <br>
+    <p style="font-size: larger;">If i were you, I'd click on this link right <a href="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\video link.html" target="_blank">here </a> to take a second to laugh at Manchester United</p>
+    <p style="font-size: x-large;">Listen to this old school jamz from the rap god. Hit the <a href="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\Audio link.html" target="_blank">link</a></p>
+    
+    
 
 
-    <video width="320" height="240" controls>
-        <source src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\movie.mp4" type="video/mp4">
-    </video> <br/>
-    <audio controls>
-        <source src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\Eminem_When_Im_Gone.mp3" type="audio/mp3">
-    </audio>
-    <br/><br/>
-    <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau, in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet) square and almost flat, and is a famous tourist attraction in Norway.</p>
-    <figure>
-        <img src="GBWA-20171126104942.jpg" alt="cartoon picture" width="400px" height="350px">
-        <figcaption>Fig 1: The Cartoon</figcaption>
-    </figure>
-    <canvas id="myCanvas" style="border: 1px solid black;" width="200px" height="200px" ></canvas>
-    <script>
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.moveTo(0,0);
-        ctx.lineTo(200,100);
-        ctx.stroke();
-        ctx.fillStyle="red"
-        ctx.fillRect(0,0,175,25)
-    </script> <br>
+    <br/>
+    
+    
+        
 
-    <svg style="width: 100; height:100">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"/>
 
-    </svg>
+    
 
-    <svg width="400" height="100">
-        <rect width="400" height="100" stroke="black" stroke-width="10" fill="blue" >
-
-    </svg>
-    <br>
-    <svg width="180" height="180">
-        <rect x="50" y="20"
-
-    </svg>
+    
+    
 
 
  
