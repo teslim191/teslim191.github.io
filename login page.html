@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body{
+            font-family: 'Comic Sans MS', Consolas, sans-serif;
+        }
+        form{
+            border: 3px solid lightgrey;
+            padding: 15px;
+        }
+        .foot{
+            background-color: lightgrey;
+
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        input[type=submit]{
+            width: 100%;
+            padding: 16px 32px;
+            margin: 15px 0;
+            border: none;
+            background-color: rgb(80, 250, 80);
+            color: white;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            opacity: 0.9;
+        }
+        .image{
+            text-align: center;
+            margin: 10px;
+        }
+        img{
+            width: 40%;
+            border-radius: 50%;
+        }
+        input[type=button]{
+            width: auto;
+            padding: 12px 20px;
+            margin: 20px;
+            border: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        input[type=button]:hover{
+            opacity: 0.8;
+        }
+        span{
+            float: right;
+            margin: 25px 20px;
+        }
+        footer{
+            text-align: center;
+        }
+        </style>
+
+    </head>
+    <body>
+    <h2>Login Form</h2>
+    <form action="" method="post">
+
+            <div class="image">
+                <img src="avatar.png" alt="avatar">
+            </div>
+            <div>
+                <label for="user"> <b>Username</b> </label>
+                <input type="text" name="Username" id="user" placeholder="Enter Username" required>
+
+                <label for="pswrd"> <b>Password</b> </label>
+                <input type="password" name="password" id="pswrd" placeholder="Enter Password" required>
+
+                <input type="submit" value="Login">
+
+                <input type="checkbox" name="Remember me" id="rmber me">Remember me
+            </div>
+    </form>
+            <div class="foot">
+                <input type="button" value="Cancel">
+
+            <span>Forgot <a href="">password?</a> </span>
+            </div>
+            <footer>
+                Copyright © teslim191.github.io
+            </footer>
+    </body>
+</html>
