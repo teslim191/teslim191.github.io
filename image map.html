@@ -1,6 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+        body{
+            background-image: url("GBWA-20180206211906.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        a.color:hover{
+            color:orange;
+        }
+        a.size:hover{
+            font-size: 150%;
+        }
+        a.background:hover{
+            background-color: green;
+        }
+        a.family:hover{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      
+        ol{
+            list-style-type:upper-alpha;background-color: lightblue;padding: 22px;
+        }
+        ol li{
+            background-color: lightgreen;margin: 10px;
+        }
+       ul{
+           list-style-type: none;padding: 0px;border: 1px solid silver;
+       }
+       ul li{
+           padding: 10px 15px;border-bottom: 1px solid silver;
+       }
+       ul li:last-child{
+           border-bottom: none;
+       }
+       ul li:hover{
+           background-color: tan;
+       }
+      table{
+          width: 100%;
+          border-collapse: collapse;
+      }
+      th, td{
+          text-align: left;border-bottom: 1px solid silver;padding: 8px;
+      }
+      tr:hover{
+          background-color: slategray;
+      }
+      tr:nth-last-child(odd){
+          background-color: teal;
+      }
+      caption{
+          caption-side: bottom;
+      }
+       
+
+        
+   
+
+       
+        </style>
+        
         <body>
             <h2>Image Map</h2>
             <p>Click on the various object in the picture to read more about the object.</p>
@@ -12,6 +75,61 @@
                 } 
                 </script>
             </map>
+            <p class="VN">2 styles</p>
+            <p class="VA">2 styles</p>
+            <p class="VC">2 styles</p>
+            <p class="VD">2 styles</p>
+            <p class="VE">2 styles</p>
+            <br>
+            <div class="ex">
+                <p class="ey">This is my symphony. i will do whatever it takes.</p>
+            </div>
+            <br>
+            <p><b><a class="color" href="www.google.com">This link changes color</a></b></p>
+            <p><b><a class="size" href="www.google.com">This link changes font size</a></b></p>
+            <p><b><a class="background" href="www.google.com">This link changes the background color</a></b></p>
+            <p><b><a class="family" href="www.google.com">This link changes the font family</a></b></p>
+            <br>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+            <br>
+            <ol>
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>Django</li>
+                <li>Python</li>
+            </ol>
+            <br>
+            <ul id="one">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Coca Cola</li>
+            </ul>
+            <br>
+            <table>
+                <caption>Table 1</caption>
+                <tr>
+                    <th>Firstname</th><th>Lastname</th><th>Saving</th>
+                </tr>
+                <tr>
+                    <td>Peter</td><td>Griffin</td><td>100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td><td>Griffin</td><td>150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td><td>Swanson</td><td>500</td>
+                </tr>
+                <tr>
+                    <td>Marcel</td><td>Mathias</td><td>500</td>
+                </tr>
+            </table>
+
+            
         </body>
     </head>
 </html>

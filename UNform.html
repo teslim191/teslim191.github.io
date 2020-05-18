@@ -27,7 +27,8 @@
         strong#t01{
             color: black;font-size: small;
         }
-    
+
+
 
 
 
@@ -61,7 +62,7 @@
                  Middle Name: <br>
                  <input type="text" name="Middle Name" value=""> <br>
                 *Family Name: <br>
-                <input type="text" name="Family Name" value=> <br>
+                <input type="text" name="Family Name" value="" autofocus> <br>
                 User ID: <br>
                 <input type="text" name="User ID" value="" maxlength="20" placeholder="User ID"> <br>
                 *Password: <br>
@@ -77,33 +78,33 @@
                 *CV/Resume: <br>
                <input type="file" name="img" multiple required> <br>
                *CGPA: <br>
-               <input type="number" name="point" min="1.0" max="5.0" required> 
+               <input type="number" name="point" min="1.0" max="5.0" required>
                 <br><br>
-                
-                
-    
+
+
+
             </fieldset><br>
             <input type="submit" value="Register"> <b>(Make sure you click on register)</b> <br>
             <input type="image" src="un_INSPIRA_LOGO_ENG.png" alt="submit" height="48px" width="90px">
-            <a href="https://inspira.un.org/psp/PUNA1J/?cmd=login&languageCd=ENG" style="color: blue;">Return to Previous Page</a><br>
+            <a href="https://inspira.un.org/psp/PUNA1J/?cmd=login&languageCd=ENG" style="color: blue;text-decoration: none;">Return to Previous Page</a><br>
         </form>
 
     </div>
-
+<input type="image" src="" alt="">
 
 
     <p style="margin-left: 30px;">*Required Information</p>
     <p style="margin-left: 30px;"> <strong id="t01">For technical support, click on</strong>  <a href="http://careers.un.org/support.aspx" style="color: blue;">Contact us</a></p>
 
 
-    
+
 
     <button type="button" onclick="myFunction()">Click Me!</button>
 
 <p id="demo">Teslim.</p>
 
 <script>
-function myFunction() { 
+function myFunction() {
     document.getElementById("demo").innerHTML = "Jimoh";
 }
 </script>
@@ -129,7 +130,7 @@ function myFunction() {
         <output name="x" for="a b"></output>
         <br><br>
         <input type="submit" value="submit">
-    
+
     </form>
     <form action="action.php">
         <input type="checkbox" name="phone" value="Iphone">I have an Iphone <br>
@@ -137,7 +138,7 @@ function myFunction() {
         <input type="checkbox" name="phone3" value="Nothing">I have nothing😁 <br>
         <input type="button" onclick="alert('LMFAO...!!!')" value="Click Me">
 
-        
+        <input type="checkbox" name="" id="">
     </form> <br><br>
 
     <form action="action.php" method="POST" novalidate enctype="text/plain">
@@ -145,6 +146,7 @@ function myFunction() {
         <input type="number" name="Quantity" min="10" max="100" step="20.5" value="15">
         <input type="submit" value="submit">
     </form>
+
 
 
     <form action="www.google.com">
@@ -166,26 +168,118 @@ function myFunction() {
         <input type="submit" value="submit to a new window" formtarget="_blank" formenctype="multipart/form-data">
 
     </form> <br>
-    <p style="font-size: larger;">If i were you, I'd click on this link right <a href="https:/teslim191.github.io/video link.html" target="_blank">here </a> to take a second to laugh at Manchester United</p>
-    <p style="font-size: x-large;">Listen to this old school jamz from the rap god. Hit the <a href="https:/teslim191.github.io/Audio link.html" target="_blank">link</a></p>
-    
-    
+    <p style="font-size: larger;">If i were you, I'd click on this link right <a href="https:/teslim191.github.io/video link.html" target="_blank" style="text-decoration: none;">here </a> to take a second to laugh at Manchester United</p>
+    <p style="font-size: x-large;">Listen to this old school jamz from the rap god. Hit the <a href="https:/teslim191.github.io/Audio link.html" target="_blank" style="text-decoration: none;">link</a></p>
+
+
 
 
     <br/>
-    
-    
-        
 
+    <button type="button" onclick="myFunction()">Click me</button>
+    <p id="class">HTML</p>
+    <script>
+        function myFunction(){
+            document.getElementById("class").innerHTML="JavaScript"
+        }
 
-    
+    </script>
+    <br><br>
 
-    
-    
+    <br>
+    <!-- using JS to pause, play, make big, make small and make normal a video -->
+    <div style="text-align: center;">
+        <button type="button" onclick="pause()">Pause</button>
+        <button type="button" onclick="play()">play</button>
+        <button type="button" onclick="makeBig1()">Big</button>
+        <button type="button" onclick="makeSmall1()">Small</button>
+        <button type="button" onclick="makeNormal1()">Normal</button><br>
+        <video width="500" height="400" controls id="aud">
+            <source src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\teaser.mp4" type="video/mp4">
+            <track src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\function 1.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
 
+        </audio>
+    </div>
+    <script>
+        var myAud = document.getElementById("aud");
+        function pause(){
+            myAud.pause();
+        }
+        function play(){
+            myAud.play();
+        }
+        function makeBig1(){
+            myAud.width = 1000;
+        }
+        function makeSmall1(){
+            myAud.width = 200;
+        }
+        function makeNormal1(){
+            myAud.width = 500;
+        }
+    </script>
+    <br>
+    <!-- Handling errors and Rejections in Geolocation -->
+    <p>Click the button to get your coordinates.</p>
+    <button type="button" onclick="getLocation()">Click Me</button>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation(){
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude:" + position.coords.latitude +
+            "<br>Longitude:" + position.coords.longitude
+        }
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    x.innerHTML = "User denied the request for Geolocation."
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
 
- 
-    
-    
+            }
+        }
+    </script>
+    <br>
+    <!-- using watchPosition() to get the location of a user -->
+    <p>Click the button to get your coordinates.</p>
+    <button type="button" onclick="getLocation()">Click Me</button>
+    <p id="demo"></p>
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation(){
+            if (navigator.geolocation) {
+                navigator.geolocation.watchPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude:" + position.coords.latitude +
+            "<br>Longitude:" + position.coords.longitude
+        }
+    </script>
+    <br>
+    <map name="">
+        <area shape="" coords="" href="" alt="">
+    </map>
+
+        <textarea rows="" cols=""></textarea>
+
 </body>
 </html>

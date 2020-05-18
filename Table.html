@@ -41,3 +41,51 @@
     
 </body>
 </html>
+
+
+<div style="text-align: center;">
+    <button type="button" onclick="playPause()">Play/Pause</button>
+    <button type="button" onclick="makeBig()">Big</button>
+    <button type="button" onclick="makeSmall()">Small</button>
+    <button type="button" onclick="makeNormal()">Normal</button><br>
+    <video width="340" height="240" controls id="index">
+        <source src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\index (1).mp4" type="video/mp4">
+        <track src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\subtitle.srt" kind="subtitles" srclang="en" label="English">            
+    </video>
+</div>
+<script>
+    var myVideo = document.getElementById("index");
+    function playPause() {
+        if (myVideo.paused) {
+            myVideo.play();
+        } else {
+            myVideo.pause()
+        }
+    }
+    function makeBig() {
+        myVideo.width = 500;
+    }
+    function makeSmall() {
+        myVideo.width = 200;
+    }
+    function makeNormal() {
+        myVideo.width = 340;
+    }
+</script><br>
+<object width="400" height="50" data="bookmark.swf"></object>
+    <object width="250" height="250" data="GBWA-20171126104942.jpg"></object>
+    <embed src="GBWA-20171203212627.jpg" width="500" height="400">
+    <iframe src="" ></iframe>
+    <br>
+    <code>
+        var x = 5
+        var y = 6
+        document.getElementById("demo").innerHTML = x + y;
+    </code>
+    
+        
+        
+        
+    
+    
+   
