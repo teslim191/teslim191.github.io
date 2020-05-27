@@ -4,40 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    .con{
-        border: 2px solid green;
-        width: 150px;
-        margin: 5px;
-        height: 200px;
-        display: inline-block;
+<!--Resize the page to for responsive side navigation-->>
+<style>
+    body{
+        margin: 0px;
+        background-color: rgb(98, 124, 98);
+    }
+    ul.sidenav{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        background-color: rgb(219, 215, 215);
+        width: 15%;
+        height: 100%;
+        position: fixed;
+        overflow: auto;
+        
+        
+    }
+    li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 8px 16px;
+        text-align: center;
+    }
+    .active{
+        background-color: rgb(35, 141, 35);
+        color: white;
+    }
+    li a:hover:not(.active){
+        background-color: rgb(46, 45, 45);
+        color: white;
 
     }
-    .box{
-        border: 2px solid red;
-
+    div{
+        margin-left: 15%;
+        padding: 1px 16px;
+        height: 1000px;
     }
-   .not{
-       border: 1px solid green;
-       width: 100px;
-       height: 150px;
-
-
-
-       padding: 5px;
-       margin: auto;
+   @media screen and (max-width: 600px) {
+       ul.sidenav{
+           width: 100%;
+           height: auto;
+           position: relative;
+       }
+       ul.sidenav li a{
+           float: left;
+           padding: 15px;
+       }
+       div{
+           margin: 0px;
+       }
+       
    }
-    </style>
-</head>
-<body>
-    <div class="con">Floating Box</div>
-    <div class="con">Floating Box</div>
-    <div class="con">Floating Box</div>
-    <div class="con">Folating Box</div>
-    <div class="box">Another box after the floating box</div>
-    <br>
-    <div class="not">this is my battle, symphony
+   @media screen and (max-width: 400px) {
+       ul.sidenav li a{
+           float: none;
+           text-align: center;
+       }
+       
+   }
+    
 
+
+</style>
+<body>
+    <ul class="sidenav">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">Technology</a></li>
+        <li><a href="">Containers</a></li>
+        <li><a href="">Docker</a></li>
+        <li><a href="">Dockerfiles</a></li>
+        <li><a href="">Cryptojacking</a></li>
+        <li><a href="">Docker Images</a></li>
+    </ul>
+    <div>
+        <h2>CONTAINERS TECHNOLOGY: KUBERNETES AND DOCKER</h2>
+        <h3>1.0	Introduction</h3>
+        <p>Container technology is an efficient and effective way to develop, test and deploy an application. They can be referred to as light weight OS-level virtualization that runs application and their dependencies in resource-isolated processes and ships it out as one unit (Spec India, 2019). The main purpose to execute software reliably from one computing environment to another. This can be from a developer’s laptop to a test environment or from a staging environment into production. It can also be from a physical machine into a data centre to a virtual machine in a private or public cloud (Rubens, 2017). They are also an important part of IT security. Important public cloud computing providers such as Amazon Web Services, Microsoft Azure and Google Cloud Platforms all embrace and use container technology (DeMuro, 2019).</p>
+        <p>A single container can be used to run anything ranging from a micro service or software process to a larger application. Inside a container, you will find all the needed executable, binary code, libraries and configuration files, all coming together to form a single unit. Containers technology makes debugging very easy by freezing and restarting an exact copy of a system or application that you plan to deploy. Container packages are complete, small and efficient enough to execute an operation within seconds (Heusser, 2020).</p>
+        <p>Deciding to use a container technology or intending to expand its usage in a different area might prove challenging. The growth and expansion in container technology leads to a variety of choice such as deciding the standard to use, how to store the old version, methods of deploying new images and how to manage containers in production (Heusser, 2020).</p>
+        <p>Before containers gained popularity, virtual machines were used. Here, one physical server is used for multiple applications through a virtualization technology which is also referred to as virtual machine (DeMuro, 2019). Each virtual machine is made up of an entire operating system and an application to run. The physical server that runs these virtual machines each has its own operating system, with a single hypervisor emulation layer at the top. By running several operating system concurrently, there will be a lot of overhead on the server as resources get used, and the number of virtual machine is always limited.</p>
+        <p>In contrast, using a container technology, the server runs a single operating system, as each of the container can be able to share this single operating system with other container on the server. The parts of the operating system that are shared do not interfere with the other containers. This implies that when containers require less system resources of the server compared to virtual machines because they do not include operating system images. They are also significantly more efficient than virtual machines since a lot of containers can be packed into a single server. This allow application to be rapidly executed, patched and scaled. For example, while a virtual machine may require tons of gigabyte for storage, a container running similar program may only need megabytes.</p>
+        <p>Cloud computing providers such as Microsoft Azure and Google cloud platforms already embraced the use of container technologies such as Docker, Apache, Mesos, Kubernetes etc. Google and YouTube have also adopted it due to its simplicity, consistency, scalability and reliability (Spec India, 2019).</p>
+        
     </div>
+
 </body>
 </html>
