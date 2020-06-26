@@ -6,86 +6,134 @@
     <title>Document</title>
 </head>
 <style>
-    table{
-        font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%;
-    }
-    td, th{
-        border: 1px solid #dddddd; text-align: left;padding: 8px;
-    }
-    tr:nth-child(even){
-        background-color: #dddddd;
-    }
+input[type="text"],select{
+    width: 130px;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    margin: 8px 0px;
+    border-radius: 4px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+input[type="text"]{
+    background-image: url(searchicon.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    background-color: rgb(125, 233, 125);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+
+}
+input[type="text"]:focus{
+    border: 3px solid silver;
+    width: 100%;
+    
+
+}
+textarea{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    resize: none;
+}
+input[type="reset"],input[type="button"]{
+    padding: 25px 40px;
+    border: none;
+    background-color: rgb(71, 184, 71);
+    color: white;
+    cursor: pointer;
+}
+input[type="reset"]:hover,input[type="button"]:hover{
+    opacity: 0.6;
+}
+body{
+    counter-reset: section;
+}
+h1{
+    counter-reset: subsection;
+}
+h1::before{
+    counter-increment: section;
+    content: "Section" counter(section) ". ";
+}
+h2::before{
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+}
+div{
+    border: 10px solid black;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    background: url('html5.gif') no-repeat;
+    background-origin: padding-box;
+    background-color: rgb(255, 0, 0,0.3);
+    
+
+}
 </style>
 <body>
-    <h2>HTML TABLE</h2>
-    <table>
-        <tr>
-            <th>company</th><th>contact</th><th>country</th>
-        </tr>
-        <tr>
-        <td>Alrfred Futterkiste</td><td>Maria Anders</td><td>Germany</td>
-        </tr>
-        <tr>
-            <td>centro commercial moctezuma</td><td>francisco chang</td><td>mexico</td>
-        </tr>
-        <tr>
-        <td>Ernst Handel</td><td>Roland Mendel</td><td>Australia</td>
-        </tr>
-        <tr>
-            <td>island trading</td><td>helen bennet</td><td>uk</td>
-        </tr>
-        <tr>
-            <td>laughing bacchus winecellars</td><td>yoshi tannamuri</td><td>canada</td>
-        </tr>
-    </table>
-    
+    <form action="" method="POST" enctype="text/plain" autocomplete="on" novalidate target="_blank">
+        <label for="FN">First Name:</label>
+        <input type="text" name="First Name" id="FN" placeholder="Search...">
+
+        <label for="LN">Last Name:</label>
+        <input type="text" name="Last Name" id="LN" placeholder="Search...">
+
+        <label for="cars">Cars:</label>
+        <select id="cars">
+            <option value="Audi">Audi</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+        </select> 
+
+        <input type="submit" value="submit">
+
+    </form>
+    <form>
+        <textarea rows="30" cols="50">some text...</textarea>
+    </form>
+    <input type="button" value="Button">
+    <input type="reset" value="Reset">
+    <h1>html tutorials</h1>
+    <h2>html tutorial</h2>
+    <h2>css tutorial</h2>
+
+    <h1>scripting tutorials</h1>
+    <h2>javascript</h2>
+    <h2>vbscript</h2>
+
+    <h1>xml tutorials:</h1>
+    <h2>xml</h2>
+    <h2>xsl</h2>
+
+    <div>
+        This is an example of using border image in CSS3.container.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+    </div>
 </body>
 </html>
-
-
-<div style="text-align: center;">
-    <button type="button" onclick="playPause()">Play/Pause</button>
-    <button type="button" onclick="makeBig()">Big</button>
-    <button type="button" onclick="makeSmall()">Small</button>
-    <button type="button" onclick="makeNormal()">Normal</button><br>
-    <video width="340" height="240" controls id="index">
-        <source src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\index (1).mp4" type="video/mp4">
-        <track src="C:\Users\COMPUTERKO\Documents\GitHub\sites\teslim191.github.io\subtitle.srt" kind="subtitles" srclang="en" label="English">            
-    </video>
-</div>
-<script>
-    var myVideo = document.getElementById("index");
-    function playPause() {
-        if (myVideo.paused) {
-            myVideo.play();
-        } else {
-            myVideo.pause()
-        }
-    }
-    function makeBig() {
-        myVideo.width = 500;
-    }
-    function makeSmall() {
-        myVideo.width = 200;
-    }
-    function makeNormal() {
-        myVideo.width = 340;
-    }
-</script><br>
-<object width="400" height="50" data="bookmark.swf"></object>
-    <object width="250" height="250" data="GBWA-20171126104942.jpg"></object>
-    <embed src="GBWA-20171203212627.jpg" width="500" height="400">
-    <iframe src="" ></iframe>
-    <br>
-    <code>
-        var x = 5
-        var y = 6
-        document.getElementById("demo").innerHTML = x + y;
-    </code>
-    
-        
-        
-        
-    
-    
-   
