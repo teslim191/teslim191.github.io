@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        div.one{
+    border: 10px solid black;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    background: url('html5.gif') no-repeat;
+    background-origin: padding-box;
+    background-color: rgb(255, 0, 0,0.3);
+    text-shadow: 0 0 5px blue, 0 0 5px green, 3px 3px 5px red;
+    box-shadow: 10px 10px 5px grey;
+}
        
    body{
             background: url('red hood.jpeg') center no-repeat fixed;
@@ -46,6 +57,19 @@
     footer{
         text-align: center;
     }
+    h1{
+        -webkit-animation: anime 5s 3;
+        position: relative;
+    }
+    @-webkit-keyframes anime{
+        0%{transform: rotate(0deg); left: 0px;}
+        25%{transform: rotate(20deg); left: 0px;}
+        50%{transform: rotate(0deg); left: 500px;}
+        55%{transform: rotate(0deg); left: 500px;}
+        75%{transform: rotate(0deg);left: 500px;}
+        100%{transform: rotate(-360de); left: 0px;}
+    }
+    
 
     </style>
 </head>
