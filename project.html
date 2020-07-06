@@ -6,29 +6,16 @@
     <title>Document</title>
 </head>
 <style>
-body{
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 4s;
-}
-@-webkit-keyframes example{
-    0%{background-color: white;}
-    25%{background-color: grey;}
-    50%{background-color: slategray;}
-    100%{background-color: tan;}
-}
 
-.responsive:hover{
-   width: 20%;
-   height: auto;
-   -webkit-transform: rotate(360deg);
-
+div.img:hover{
+   opacity: 0.5;
+   
 }
 img{
     width: 100%;
     height: auto;
     border: 1px solid silver; 
     border-style: inset;
-    
 }
 .responsive{
     padding: 10px;
@@ -38,7 +25,6 @@ img{
     position: relative;
     box-shadow: 1px 2px 4px gray;
     background: white;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
     
 }
 .responsive::after{

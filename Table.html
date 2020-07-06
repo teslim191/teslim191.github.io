@@ -68,11 +68,6 @@ body{
 .one{
     width: 300px;
     box-shadow: 0px 5px 10px grey, 0px 7px 10px silver, 0px 0px 10px black;
-    -webkit-animation: myFirst 4s linear 1s 4 alternate;
-}
-@-webkit-keyframes myFirst{
-    from{left: 0px;}
-    to{left: 500px;}
 }
 .two{
     padding: 10px;
@@ -98,42 +93,10 @@ body{
 }
 #rot{
     background-color: blue;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin-left: 200px;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-    -webkit-animation: example 4s ease-in-out 1s 1 reverse;
-    position: relative;
-}
-@-webkit-keyframes example{
-    from{left: 0px;}
-    to{left: 500px;}
-}
-#animated_div {
-  width:76px;
-  height:47px;
-  background: #92B901;
-color: #ffffff;
-position: relative;
-font-weight:bold;
-font-size:20px;
-padding:10px;
-animation:animated_div 5s 1;
--moz-animation:animated_div 5s 1;
--webkit-animation:animated_div 5s 1;
--o-animation:animated_div 5s 1;
-border-radius:5px;
-  -webkit-border-radius:5px;
-}
-
-@keyframes animated_div
-{
-0%		{transform: rotate(0deg);left:0px;}
-25%		{transform: rotate(20deg);left:0px;}
-50%		{transform: rotate(0deg);left:500px;}
-55%		{transform: rotate(0deg);left:500px;}
-70%		{transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100%	{transform: rotate(-360deg);left:0px;}
+    -webkit-transform: mat;
 }
 
 </style>
@@ -174,10 +137,10 @@ border-radius:5px;
     </div>
     <br>
     <div id="rot">
-        <img src="orange girl.jpg" alt="castle" width="300" height="300">
+        this is a 3D transformof a div 
     </div>
     <br>
-    <div id="animated_div">CSS3</div>
-    
+    <abbr title="Twitter" class="pr-5 text-2xl font-semibold hover:text-pink-300"><a href="https://twitter.com/lauragift_" target="_blank" rel="noopener">TW</a>
+
 </body>
 </html>
