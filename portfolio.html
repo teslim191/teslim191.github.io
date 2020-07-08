@@ -50,8 +50,8 @@
         img.passport{
             width: 35%;
             border-radius: 50%;
-            -webkit-transition: width 5s;
-            -webkit-transition-delay: 1s;
+            -webkit-transition: width 5s 1s;
+            transition: width 5s 1s;
         }
         img.passport:hover{
             width: 50%;
@@ -138,8 +138,7 @@
             color: white;
             text-decoration: none;
             text-shadow: 0px 0px 5px black;
-            -webkit-animation: animate 5s 1;
-            position: relative;
+
         }
         @-webkit-keyframes animate{
             0%{transform: rotate(0deg);left: 0px;}
@@ -148,13 +147,24 @@
             55%{transform: rotate(0deg);left: 500px;}
             75%{transform: rotate(0deg); left: 500px;}
             100%{transform: rotate(-360deg);left: 0px;}
-
+        }
+        @keyframes animate{
+            0%{transform: rotate(0deg);left: 0px;}
+            25%{transform: rotate(20deg); left: 0px;}
+            50%{transform: rotate(0deg);left: 500px;}
+            55%{transform: rotate(0deg);left: 500px;}
+            75%{transform: rotate(0deg); left: 500px;}
+            100%{transform: rotate(-360deg);left: 0px;}
         }
         .link{
             margin-bottom: 30px;
+            -webkit-animation: animate 5s 1;
+            animation: animate 5s 1;
+            position: relative;
         }
         a.email:hover{
             opacity: 0.9;
+    
         }
     
 

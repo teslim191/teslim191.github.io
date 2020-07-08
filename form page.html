@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        div.one{
+    border: 10px solid black;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    background: url('html5.gif') no-repeat;
+    background-origin: padding-box;
+    background-color: rgb(255, 0, 0,0.3);
+    text-shadow: 0 0 5px blue, 0 0 5px green, 3px 3px 5px red;
+    box-shadow: 10px 10px 5px grey;
+}
        
    body{
-            background: url('red hood.jpeg') center no-repeat fixed;
-            background-size: cover;
-            background-origin: content-box;
-            }
+        background-color: grey;
+    }
         
     span{
-            color: #ff0000;
-        }
+        color: #ff0000;
+    }
     input[type=text],input[type=email],input[type=password]{
         width: 130px;
         display: block;
@@ -46,12 +55,41 @@
     footer{
         text-align: center;
     }
+    h1{
+       
+        width:100px;
+        background: black;
+        color: #ffffff;
+        position: relative;
+        padding:10px;
+       -webkit-animation: anime 5s 1;
+        animation: anime 5s 1;
+        border-radius:5px;
+    }
+    
+    @-webkit-keyframes anime{
+        0%	{transform: rotate(0deg);left:0px;}
+        25%	{transform: rotate(20deg);left:0px;}
+        50%	{transform: rotate(0deg);left:500px;}
+        55%	{transform: rotate(0deg);left:500px;}
+        70%	{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+        100%{transform: rotate(-360deg);left:0px;}
+    }
+    @keyframes anime{
+        0%	{transform: rotate(0deg);left:0px;}
+        25%	{transform: rotate(20deg);left:0px;}
+        50%	{transform: rotate(0deg);left:500px;}
+        55%	{transform: rotate(0deg);left:500px;}
+        70%	{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+        100%{transform: rotate(-360deg);left:0px;}
+    }
 
     </style>
 </head>
 <body>
-    <div>
-        <h1>Signup</h1>
+    <h1>Signup</h1>
+
+    <div>    
     <em><p><span>*</span> Indicates required field</p></em>
     <form action="MAILTO:teslimjimoh191@gmail.com" method="post" enctype="text/plain" novalidate>
         <fieldset>
