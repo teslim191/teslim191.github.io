@@ -4,110 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div.one{
-    border: 10px solid black;
-    padding: 20px;
-    width: 50%;
-    height: auto;
-    background: url('html5.gif') no-repeat;
-    background-origin: padding-box;
-    background-color: rgb(255, 0, 0,0.3);
-    text-shadow: 0 0 5px blue, 0 0 5px green, 3px 3px 5px red;
-    box-shadow: 10px 10px 5px grey;
-}
-       
-   body{
-        background-color: grey;
-    }
-        
-    span{
-        color: #ff0000;
-    }
-    input[type=text],input[type=email],input[type=password]{
-        width: 130px;
-        display: block;
-        border: 1px solid silver;
-        box-sizing: border-box;
-        padding: 3px 10px;
-        margin: 8px 0;
-        outline: none;
-        -webkit-transition: width 0.4s ease-in-out;
-        transition: width 0.4s ease-in-out;
-    }
-    input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
-        width: 100%;
-        border: 3px solid #ccc;
+    <link rel="stylesheet" href="form page.css">
 
-    }
-    input[type=submit]{
-        width: auto;
-        margin: 8px 0;
-        padding: 12px 20px;
-        border:none;
-        background-color: black;
-        color: white;
-        cursor: pointer;
-    }
-    input[type=submit]:hover{
-        background-color: silver;
-    }
-    footer{
-        text-align: center;
-    }
-    h1{
-       
-        max-width:100px;
-        background: black;
-        color: #ffffff;
-        position: relative;
-        padding:10px;
-       -webkit-animation: anime 5s 1;
-        animation: anime 5s 1;
-        border-radius:5px;
-        text-align: center;
-    }
-    
-    @-webkit-keyframes anime{
-        0%	{transform: rotate(0deg);left:0px;}
-        25%	{transform: rotate(20deg);left:0px;}
-        50%	{transform: rotate(0deg);left:500px;}
-        55%	{transform: rotate(0deg);left:500px;}
-        70%	{transform: rotate(0deg);left:500px;background:#1ec7e6;}
-        100%{transform: rotate(-360deg);left:0px;}
-    }
-    @keyframes anime{
-        0%	{transform: rotate(0deg);left:0px;}
-        25%	{transform: rotate(20deg);left:0px;}
-        50%	{transform: rotate(0deg);left:500px;}
-        55%	{transform: rotate(0deg);left:500px;}
-        70%	{transform: rotate(0deg);left:500px;background:#1ec7e6;}
-        100%{transform: rotate(-360deg);left:0px;}
-    }
-
-    </style>
 </head>
 <body>
     <h1>Signup</h1>
 
     <div>    
-    <em><p><span>*</span> Indicates required field</p></em>
+    <em><p><span class="span">*</span> Indicates required field</p></em>
     <form action="MAILTO:teslimjimoh191@gmail.com" method="post" enctype="text/plain" novalidate>
         <fieldset>
             <legend>Enter Registration Information</legend>
-            <label for="usrnme">Username <span>*</span> </label>
+            <label for="usrnme">Username <span class="span">*</span> </label>
             <input type="text" name="username" id="usrnme" placeholder="Username" required>
 
-            <label for="email">E-mail <span>*</span> </label>
+            <label for="email">E-mail <span class="span">*</span> </label>
             <input type="email" name="email" id="email" placeholder="ex: myname@example.com" required>
 
-            <label for="pswrd">Password <span>*</span> </label>
+            <label for="pswrd">Password <span class="span">*</span> </label>
             <input type="password" name="password" id="pswrd" placeholder="Password" required>
 
-            <label for="confpswrd">Confirm Password <span>*</span> </label>
+            <label for="confpswrd">Confirm Password <span class="span">*</span> </label>
             <input type="password" name="Confirm Password" id="confpswrd" placeholder="Confirm Password" required>
         </fieldset>
-        <input type="submit" value="Register">
+        <button type="submit" class="button"><span>Register</span></button>
     </form>
     <footer>
         Copyright © teslim191.github.io

@@ -1,0 +1,164 @@
+body{
+    background-color: black;
+    font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Noteworthy-Lt.ttf);
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    float: left;
+
+}
+li a{
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+}
+a:hover{
+    background-color: orange;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+    color: darkcyan;
+    font-size: 3em;
+    text-shadow: 0px 0px 10px gray;
+
+}
+div.passport{
+    text-align: center;
+    margin-top: 0px;
+}
+img.passport{
+    width: 35%;
+    border-radius: 50%;
+    -webkit-transition: width 5s 1s;
+    transition: width 5s 1s;
+}
+img.passport:hover{
+    width: 50%;
+}
+.container{
+    color: darkcyan;
+    font-size: 2em;
+    text-align: center;
+}
+.para{
+    color: grey;
+    font-size: 1.4em;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+}
+.one{
+    color: darkcyan;
+    font-size: 2.4em;
+    margin-top: 50px;
+}
+.two{
+    color: darkcyan;
+    text-shadow: 0px 0px 5px;
+
+}
+.text{
+    color: grey;
+    font-size: 1.4em;
+    max-width: 650px;
+    text-align: center;
+    margin: 2px auto;
+}
+
+.hub{
+    text-align: center;
+}
+
+.dev{
+color: darkcyan;
+margin: 40px;
+text-align: center;
+
+}
+
+.ved{
+color: grey;
+font-size: 1.4em;
+max-width: 650px;
+text-align: center;
+margin: 2px auto;
+}
+
+.buh{
+    margin-top: 50px;
+}
+
+.head{
+    color: darkcyan;
+    font-size: 2.4em;
+    clear: both;
+    margin-top: 50px;
+
+}
+.out{
+    color: darkcyan;
+}
+.cot{
+    color: grey;
+    font-size: 1.4em;
+    max-width: 650px;
+    text-align: center;
+    margin: 2px auto;
+}
+
+a.email{
+    padding: 20px 20px;
+    background-color: rgb(90, 170, 255);
+    background-image: url('email.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    padding-left: 50px;
+    background-size: 40px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px black;
+    display: inline-block;
+}
+a.email:active{
+    transform: translateY(4px);
+}
+@-webkit-keyframes animate{
+    0%{transform: rotate(0deg);left: 0px;}
+    25%{transform: rotate(20deg); left: 0px;}
+    50%{transform: rotate(0deg);left: 500px;}
+    55%{transform: rotate(0deg);left: 500px;}
+    75%{transform: rotate(0deg); left: 500px;}
+    100%{transform: rotate(-360deg);left: 0px;}
+}
+@keyframes animate{
+    0%{transform: rotate(0deg);left: 0px;}
+    25%{transform: rotate(20deg); left: 0px;}
+    50%{transform: rotate(0deg);left: 500px;}
+    55%{transform: rotate(0deg);left: 500px;}
+    75%{transform: rotate(0deg); left: 500px;}
+    100%{transform: rotate(-360deg);left: 0px;}
+}
+.link{
+    margin-bottom: 30px;
+    -webkit-animation: animate 5s 1;
+    animation: animate 5s 1;
+    position: relative;
+}
+a.email:hover{
+    opacity: 0.9;
+
+}
