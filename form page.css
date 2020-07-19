@@ -94,16 +94,9 @@ div.one{
     @-webkit-keyframes anime{
         0%	{transform: rotate(0deg);left:0px;}
         25%	{transform: rotate(20deg);left:0px;}
-        50%	{transform: rotate(0deg);left:500px;}
-        55%	{transform: rotate(0deg);left:500px;}
-        70%	{transform: rotate(0deg);left:500px;background:#1ec7e6;}
+        50%	{transform: rotate(0deg);left:350px;}
+        55%	{transform: rotate(0deg);left:350px;}
+        70%	{transform: rotate(0deg);left:350px;background:#1ec7e6;}
         100%{transform: rotate(-360deg);left:0px;}
     }
-    @keyframes anime{
-        0%	{transform: rotate(0deg);left:0px;}
-        25%	{transform: rotate(20deg);left:0px;}
-        50%	{transform: rotate(0deg);left:500px;}
-        55%	{transform: rotate(0deg);left:500px;}
-        70%	{transform: rotate(0deg);left:500px;background:#1ec7e6;}
-        100%{transform: rotate(-360deg);left:0px;}
-    }
+    
