@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{margin: 0px;}
+    * {box-sizing: border-box;}
+    .header{background-color: indianred; text-align: center; padding: 2px;}
+    .body{ background-color: rgb(136, 136, 241); padding: 20px;}
+    .side{display: flex;}
+    .side1{flex: 50%; background-color: silver; text-align: center;padding: 30px;}
+    .side2{flex: 50%; background-color: grey; text-align: center; padding: 30px;}
+    .footer{background-color: indigo; text-align: center;padding: 2px;}
+
+    @media screen and (max-width: 600px) {
+        .side, .footer{
+            flex-direction: column;
+        }
+    }
+
+</style>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+    </div>
+
+    <div class="side">
+        <div class="side1">
+            Aside1
+        </div>
+
+        <div class="side2">
+            Aside2
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

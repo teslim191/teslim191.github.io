@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0px;
+    }
+    .header{
+        background-color: grey;
+        padding: 32px;
+        text-align: center;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+    }
+    a{
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        background-color: orange;
+    }
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .side{
+        flex: 30%;
+    
+        padding: 5px;
+        background-color: silver;
+    }
+    img{
+ 
+        vertical-align: middle;
+        padding: 5px;
+    }
+    .main{
+        flex: 70%;
+        
+        padding: 5px;
+
+    }
+    .footer{
+        text-align: center;
+        background-color: silver;
+        padding: 2px;
+    }
+    @media screen and (max-width: 600px) {
+        .nav,.section{
+            flex-direction: column;
+            
+        }
+    }
+
+</style>
+<body>
+    <div class="header">
+        <h1>Responsive Web Design</h1>
+        <h3>Resize the web browser</h3>
+    </div>
+
+    <div class="nav">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+    </div>
+
+    <div class="section">
+        <div class="side">
+            <h2 style="">Photo</h2>
+            <img src="passsport.JPG" alt="" style="width: 60%;">
+            <p>i am an aspiring frontend web developer who is passionate about building website that can run seamlessly in all devices </p>
+            <p>i am based in Ilorin, Kwara State,Nigeria.</p>
+            <img src="image one.png" alt="" style="width: 60%;">
+            <img src="orange girl.jpg" alt="" style="width: 60%;">
+            <img src="smoke.jpeg" alt="" style="width: 60%;" >
+        </div>
+        <div class="main">
+            <h2>Breaking News....</h2>
+            <p>A new strain of the corona virus called Covid-19 was detected in the Wuhan province of China.</p>
+            <p>This virus has led to the death of about 400,000 people, with a reported two million confirmed cases </p>
+            <br>
+            <img src="covid-19 2.png" alt="" style="width: 60%;">
+            <img src="Dashboard 4.png" alt="" style="width: 60%;">
+            <p>A new strain of the corona virus called Covid-19 was detected in the Wuhan province of China.</p>
+            <p>This virus has led to the death of about 400,000 people, with a reported two million confirmed cases </p>
+
+        </div>    
+        
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

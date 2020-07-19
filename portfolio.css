@@ -1,6 +1,7 @@
 body{
     background-color: black;
     font-family: myFirstFont;
+    margin: 0px;
 }
 
 @font-face {
@@ -23,6 +24,7 @@ li a{
     padding: 12px 20px;
     text-decoration: none;
     display: block;
+
 }
 a:hover{
     background-color: orange;
@@ -162,3 +164,13 @@ a.email:hover{
     opacity: 0.9;
 
 }
+@media screen and (max-width: 600px){
+    li {
+        float: none;
+        text-align: center;
+        
+    }
+     ul{
+        margin: 0px;
+    }
+} 

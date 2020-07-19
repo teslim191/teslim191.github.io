@@ -4,188 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <style>
-       header{
-           background-color: black;color: white;text-align: center;padding: 5px;
-       }
-       nav{
-           float: left;line-height: 30px;padding: 5px;background-color: lightgray;height: 300px;width: 100px;
-       }
-       section{
-           float: left;padding: 10px;width: 350px;
-       }
-       footer{
-           text-align: center;clear: both;background-color: black;color: white;padding: 5px;
-       }
-       table.logo{
-           width: 100%;border: 1px solid #d4d4d4;
-       }
-       table.logo th, td{
-           padding: 10px;
-       }
-       table.logo th{
-           width: 40px;
-       }
-       p.leo{background-color: yellow;
-             border: 1px solid red;
-             padding: 50px 70px 60px 90px;
-       }
-       div{border: 3px solid green; height: 100px;max-width: 1000px;}
-       h1{
-           text-align: center;color: green;text-transform: uppercase;
-       }
-       p{
-           text-indent: 40px;text-align: justify;letter-spacing: 3px;word-spacing: 3px;text-shadow:red 2px 2px;font:italic normal normal 110%"Times New Roman",serif;
-       }
-       a{
-           text-decoration: none;
-       }
-       div.me{
-           border: 1px solid black;text-align: justify;width: 200px;height: 200px;padding: 10px;
-       }
-       img.top{
-           vertical-align: text-bottom;
-       }
-       body{
-           font-size: 100%;
-       }
-       a:link, a:visited{
-           color: black;
-           padding: 10px 15px;
-           border: 2px solid green;
-           text-align: center;
-           display: inline-block;
-       }
-       a:hover, a:active{
-           background-color: green;color: white;
-       }
-       ul{
-            background-color: indigo;padding: 20px;
-        }
-        ul li{
-            background-color: lawngreen;margin: 15px 10px 15px 10px;
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th{
-            text-align: left;
-        }
-        tr:nth-last-child(odd){
-            background-color: silver;
-        }
-        div#res{
-            overflow: scroll;
-        }
-
-
-   </style>
 </head>
+<style>
+    body{margin: 0px;}
+    * {box-sizing: border-box;}
+    .header{
+        background-color: rgb(5, 80, 80);
+        padding: 30px;
+        text-align: center;
+        color: white;
+    }
+    .nav{
+        display: flex;
+        background-color: black;
+    }
+    .nav a{
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+    }
+    .nav a:hover{background-color: orange;}
+    .body{display: flex; flex-wrap: nowrap;}
+    .side{flex: 30%;  padding: 12px 20px; background-color: grey;}
+    .main{flex: 70%;  background-color: lavender; padding: 12px 20px;}
+    .image{max-width: 350px;}
+    footer{text-align: center; background-color: silver; padding: 5px;}
+    @media screen and (max-width: 800px) {
+        .nav, .body, .footer{
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .nav, .body, .footer{
+            flex-direction: column-reverse;
+        }
+    }
+
+</style>
 <body>
-<header>
-    <h1>City Gallery</h1>
-</header>
-<nav>
-    London<br>
-    Paris<br>
-    Tokyo
-</nav>
-<section>
-    <h2>London</h2>
-    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-</section>
-<footer>
-    Copyright © W3Schools.com
-</footer>
-<br>
-<table class="logo">
-    <tr>
-        <th>
-            <img src="un_INSPIRA_LOGO_ENG.png" alt="un_INSPIRA_LOGO_ENG" height="60px" width="100px">
-        </th>
-        <td>
-            Standing on the River Thames, London has been a major settlement for two millennia,
-        </td>
-    </tr>
-</table>
-<br>
-<iframe src="chasis.html" height="800px" width="700px" name="iframe_a"></iframe>
-<p><a href="HTML5.html" target="iframe_a">link</a></p>
-<br>
-<button type="button" onclick="myClick()">button</button>
-<p id="meme">Teslim</p>
-<script>
- function myClick() {
-     document.getElementById("meme").innerHTML= "Oyewale Jimoh";
- }
-</script>
-<select>
-    <option value=""></option>
-
-</select>
-encryption:
-<keygen name="securuty">
-    <form action="" id="form1">
-        <input type="submit" value="submit" formenctype="">
-    </form>
-    <br>
-    <form action="www.W3Schools.com">
-        <input type="url" list="url_link" name="link">
-        <datalist id="url_link">
-            <option label="W3Schools" value="w3schools.com">
-            <option label="google" value="www.google.com">
-            <option label="goal" value="www.goal.com">
-        </datalist>
-        <input type="submit" value="submit">
-
-    </form>
-    <br>
-
-    <svg style="width: 100;height: 100;">
-        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow">
-
-    </svg>
-    <br>
-    <h2>Using Individual padding Properties:</h2>
-            <p class="aria">This is a paragraph with no specified padding.</p>
-            <p class="leo">This paragraph has a top and bottom padding of 50px, a left padding of 80px, and a right padding of 30px. London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-    <br>
-    <h2>Set height and width of an Element:</h2>
-    <div>
-     This div element has a height of 100px and a width of 500px
+    <div class="header">
+        <h1>My Website</h1>
+        <p>with a flexible layout</p>
     </div>
-    <h1>text formatting</h1>
-    <p>This text is styled with some of the text formatting properties. The heading uses the text-align, text-transform, and color properties. The paragraph is indented, aligned, and the space between characters is specified. The underline is removed from this colored <a href="tryitaeac.html?filename=trycss_text" target="_blank">"Try it yourself"</a> link.</p>
-    <br>
-    <h1>Example text-align: justify;</h1>
-    <p> <img class="top" src="html5.gif" alt="html picture"> The text-align: justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).</p>
-    <div class="me">
-        In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+    <div class="nav">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
     </div>
-    <br>
-    <a href="w3schools.com" target="_blank">This is a link</a>
-    <br>
-    <div id="res">
-        <table>
-            <tr>
-                <th>First Name</th><th>Last Name</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th><th>Points</th>
-            </tr>
-            <tr>
-                <td>Jill</td><td>Smith</td><td>50</td><td>47</td><td>67</td><td>56</td><td>28</td><td>37</td><td>38</td><td>29</td><td>09</td><td>29</td><td>98</td>
-            </tr>
-            <tr>
-                <td>Eve</td><td>Jackson</td><td>27</td><td>38</td><td>48</td><td>09</td><td>98</td><td>376</td><td>87</td><td>38</td><td>37</td><td>47</td><td>46</td>
-            </tr>
-            <tr>
-                <td>Adam</td><td>Johnson</td><td>45</td><td>29</td><td>87</td><td>98</td><td>98</td><td>098</td><td>98</td><td>09</td><td>23</td><td>34</td><td>45</td>
-            </tr>
-        </table>
+            
+    <div class="body">
+        <div class="side">
+            <h1>About Me:</h1>
+            <h2>Photo of me</h2>
+            <img class="image" src="passsport.JPG" alt="" width="100%">
+            <p>some text about me in culpa qui officiaal deserunt mollit anim.....</p>
+            <h3>More text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <img class="image" src="orange girl.jpg" alt="" width="100%">
+            <img class="image" src="smoke.jpeg" alt="" width="100%">
+            <img class="image" src="image one.png" alt="" width="100%">
+        </div>
 
+        <div class="main">
+            <h1>Title Heading</h1>
+            <h2>Title description, Dec 7, 2017</h2>
+            <img class="image" src="red hood.jpeg" alt="" width="100%">
+            <p>some text...</p>
+            <p>sunt in culpa qui official deserunt mollit anim id est laborum consectetur adipiscing elit, sed doo eiusmod tempor
+                incddjie9 yuyri duggak euhdt iujqF EDIU WEDYQ erecu erud9dcn edhuf wdhsuai suguys uiuuuhsdz uhdufliljicd sauyhuof</p>
+            <br>
+            <h1>Title Heading</h1>
+            <h2>Title description, Sep 2, 2017</h2>
+            <img class="image" src="image one.png" alt="" width="100%">
+            <p>some text...</p>
+            <p>sunt in culpa qui official deserunt mollit anim id est laborum consectetur adipiscing elit, sed doo eiusmod tempor
+                incddjie9 yuyri duggak euhdt iujqF EDIU WEDYQ erecu erud9dcn edhuf wdhsuai suguys uiuuuhsdz uhdufliljicd sauyhuof</p>
+            
+        </div>
     </div>
 
-
-
+    <footer>
+        <h2>Footer</h2>
+    </footer>
 </body>
 </html>

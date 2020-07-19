@@ -32,23 +32,12 @@ li a:hover {
 }
 
 @media screen and (max-width: 600px) {
-     .top{
-         width: 100%;
-         height: auto;
-         padding: 15px;
-         
-     }
+
+    li{float: none; text-align: center;}
+    ul{margin: 0px;}
     
 } 
-@media screen and (max-width: 400px) {
-     .top{
-         width: 100%;
-         height: auto;
-         padding: 15px;
-         
-     }
-    
-} 
+
 h1{
     color: white;
     margin-left: 50px;
@@ -123,6 +112,7 @@ a.project:hover{
 .para, h2{
     margin-top: 0px;
 }
+
 .one{
     animation: first 5s cubic-bezier(0.23, 1, 0.320, 1) 0.9s forwards;
     position: relative;

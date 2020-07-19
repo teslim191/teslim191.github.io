@@ -22,12 +22,14 @@ div.one{
         display: block;
         border: 1px solid silver;
         box-sizing: border-box;
-        padding: 3px 10px;
+        padding: 4px 10px;
         margin: 8px 0;
         outline: none;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
+    
+
     input[type=text]:focus,input[type=email]:focus,input[type=password]:focus{
         width: 100%;
         border: 3px solid #ccc;
@@ -43,6 +45,7 @@ div.one{
         display: inline-block;
         cursor: pointer;
         width: 100px;
+        outline: none;
         
     }
     .button span{
@@ -67,6 +70,10 @@ div.one{
         top: 0;
 
     }
+    .button:active{
+        outline: 1px solid white;
+    }
+    
     
     footer{
         text-align: center;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        color: white;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .nav{
+        display: flex;
+        background-color: black;
+    }
+    .nav a{
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    .nav a:hover{
+        background-color: orange;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .aside{
+        flex: 30%;
+        background-color: black;
+        padding: 20px;
+    }
+    .section{
+        flex: 70%;
+        padding: 20px;
+        background-color: rgb(58, 56, 56);
+        
+    }
+    .passport{
+        max-width: 100%;
+        flex: 100%;
+        border-radius: 50%;
+    }
+    p{
+        max-width: 100%;
+    }
+    h2{
+        max-width: 100%;
+
+    }
+    .me{
+        text-align: center;
+    }
+    .twt,.gmail,.instagram,.linkedin,.medium{
+    max-width: 30px;
+    }
+    .image{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .orange{
+        max-width: 30%;
+        
+    }
+    @media screen and (max-width: 700px) {
+        .nav, .row{
+            flex-direction: column;
+        }
+        
+    }
+    .footer{
+        color: black;
+        background-color: rgb(194, 192, 192);
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="nav">
+        <a href="">Home</a>
+        <a href="">Project</a>
+        <a href="">Resume</a>
+        <a href="">Service</a>
+        <a href="">Memoir</a>
+    </div>
+
+    <div class="row">
+        <div class="aside">
+            <h1 class="me">About Me</h1>
+        <div class="passport">
+            <img class="passport" src="passsport.JPG" alt="passsport">
+        </div>
+        <p>I am a developer based in Kwara State, Nigeria. I am very passionate about technology and I love to develop website. i Know how to build website that would run across devices using the latest technologies available.</p>
+        <p>I am always available for freelance work.</p>
+        <br>
+        <h2>Click on the link below to get started</h2>
+        <div class="image">
+            <a class="logo1" href="https://mobile.twitter.com/Malkohm"><img class="twt" src="twitter logo.jpg" alt="twitter logo"></a>
+            <a class="logo2" href="mailto:durosayemalcolm@gmail.com"><img class="gmail" src="gmail logo.JPG" alt="gmail"></a>
+            <a class="logo3" href="https://www.instagram.com/feel4thirteen/"><img class="instagram" src="instagram logo.png" alt="instagram"></a>
+            <a class="logo4" href="https://www.linkedin.com/mwlite/in/malcolm-durosaye-6b5b12162"><img class="linkedin" src="linkedin-logo.png" alt="linkedin logo"></a>
+            <a class="logo5" href="https://medium.com/@Drichzzy"><img class="medium" src="medium1.jpg" alt="medium"></a>      
+        </div>
+        </div>
+        
+        <div class="section">
+            <h1>Title Heading</h1>
+            <h3>Title description, July 14, 2020</h3>
+            <div class="image1">
+                <img class="orange" src="orange girl.jpg" alt="">
+            </div>
+            <p>I have 2 years working experience in exploring data and algorithms using technologies like Stata, Python, IBM SPSS and Microsoft Excel. I am also passionate about Artificial Intelligence, basketball and fashion.</p>
+            <br>
+            <h1>Title Heading</h1>
+            <h3>Title description, July 14, 2020</h3>
+            <div class="image1">
+                <img class="orange" src="orange girl.jpg" alt="">
+            </div>
+            <p>I have 2 years working experience in exploring data and algorithms using technologies like Stata, Python, IBM SPSS and Microsoft Excel. I am also passionate about Artificial Intelligence, basketball and fashion.</p>       
+        </div>
+    </div>
+    <div class="footer">
+        <footer>teslim191.github.io</footer>
+    </div>
+
+
+    
+
+    
+</body>
+</html>
