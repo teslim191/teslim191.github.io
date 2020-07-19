@@ -95,7 +95,7 @@ div.one{
         0%	{transform: rotate(0deg);left:0px;}
         25%	{transform: rotate(20deg);left:0px;}
         50%	{transform: rotate(0deg);left:350px;}
-        55%	{transform: rotate(0deg);left:350px;}
+        55%	{transform: rotate(0deg);left:350px; background-color: violet;}
         70%	{transform: rotate(0deg);left:350px;background:#1ec7e6;}
         100%{transform: rotate(-360deg);left:0px;}
     }
