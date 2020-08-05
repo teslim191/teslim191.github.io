@@ -4,214 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            background-color: black;
-        }
-        ul{
-            padding: 0px;
-            margin: 0px;
-            background-color: black;
-            list-style-type: none;
-            overflow: hidden;
-        }
-        li{
-            float: left;
-
-        }
-        li a{
-            color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        a:hover{
-            background-color: orange;
-        }
-
-        h1{
-            text-align: center;
-            margin-top: 100px;
-            font-family: 'Comic Sans MS', sans-serif;
-            color: darkcyan;
-            font-size: 5em;
-
-        }
-        div.passport{
-            text-align: center;
-            margin-top: 0px;
-        }
-        img.passport{
-            width: 20%;
-            border-radius: 50%;
-        }
-        .container{
-            color: darkcyan;
-            font-family: Constantia, serif;
-            font-size: 2em;
-            text-align: center;
-        }
-        .para{
-            color: grey;
-            font-size: 1.4em;
-            font-family: Constantia, serif;
-            max-width: 500px;
-            text-align: center;
-            margin: auto;
-        }
-        .one{
-            color: darkcyan;
-            font-size: 2.4em;
-            font-family: Constantia, serif;
-        }
-        .two{
-            color: darkcyan;
-            font-family: Constantia, serif;
-
-        }
-        .text{
-            color: grey;
-            font-size: 1.4em;
-            font-family: Constantia, serif;
-            max-width: 550px;
-            text-align: justify;
-            margin: 2px auto;
-
-
-        }
-        .img{
-            width: 20%;
-            float: left;
-            margin: 0px 20px 15px 0px;
-
-
-        }
-        .hub{
-            text-align: center;
-        }
-
-        .dev{
-        color: darkcyan;
-        font-family: Constantia, serif;
-        margin: 40px;
-        text-align: center;
-
-
-        }
-
-        .ved{
-        color: grey;
-        font-size: 1.4em;
-        font-family: Constantia, serif;
-        max-width: 600px;
-        text-align: justify;
-        margin: 2px auto;
-        }
-        
-        .buh{
-            margin-top: 100px;
-        }
-
-        #tar{
-            width: 20%;
-            float: right;
-            margin: 0px 0px 15px 20px;
-
-        }
-
-
-        .head{
-            color: darkcyan;
-            font-size: 2.4em;
-            font-family: Constantia, serif;
-            clear: both;
-
-        }
-        .out{
-            color: darkcyan;
-            font-family: Constantia, serif;
-
-        }
-        .cot{
-            color: grey;
-            font-size: 1.4em;
-            font-family: Constantia, serif;
-            max-width: 550px;
-            text-align: center;
-            margin: 2px auto;
-        }
-        a.email{
-            padding: 20px 20px;
-            background-color: rgb(90, 170, 255);
-            background-image: url('email.png');
-            background-repeat: no-repeat;
-            background-position: 10px 10px;
-            padding-left: 50px;
-            background-size: 40px;
-            color: white;
-            text-decoration: none;
-        }
-        .link{
-            margin-bottom: 30px;
-        }
-        a.email:hover{
-            opacity: 0.9;
-        }
-
-    </style>
 </head>
+<style>
+    * {box-sizing: border-box;}
+    body{margin: 0px;}
+    .header{padding: 20px; text-align: center; background-color: silver;}
+    .nav{display: flex;flex-wrap: wrap; background-color: rgb(82, 81, 81);}
+    .nav a{padding: 12px 20px; text-decoration: none; color: white; }
+    .nav a:hover{background-color: orange;}
+    .centre{display: flex; flex-wrap: wrap;}
+    .side{flex: 30%;background-color: grey; padding: 5px;}
+    img{max-width: 100%; height: auto;}
+    .main{flex: 40%; background-color: rgb(192, 189, 189);padding: 5px;}
+    .leftside{flex: 30%;background-color: rgb(153, 153, 153);padding: 5px;}
+    .footer{background-color: silver;padding: 5px;text-align: center;}
+    @media screen and (max-width: 500px) {
+        .nav,.centre{
+            flex-direction: column;
+        }
+    }
+
+</style>
 <body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
 
-        <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-        </nav>
+    <div class="nav">
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
+    </div>
 
-    <section>
-        <h1>I'm Teslim.</h1>
-        <div class="passport">
-            <img class="passport" src="passsport.JPG" alt="passsport">
+    <div class="centre">
+        <div class="side">
+            <h2>About Me</h2>
+            <div></div>
+            <img src="" alt="picture" width="300px">
+            <p>this is a new data Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <h3>More text about me</h3>
+            <h3>bhlah blah blah blqh </h3>
         </div>
 
-        <div class="container">Hi.</div>
-        <p class="para">I'm a data analyst / developer based in Kwara State, Nigeria. I have a passion for data analysis and love to develop website.</p>
-
-        <div class="hub">
-            <h1 class="one">What I can do.</h1>
-            <h2 class="two">Analyse what you want.</h2>
-            <p class="text">
-                <img class="img" src="avatar2.jpeg" alt="avatar">I like to keep it straight and simple. My goals are to use clear visualizations to convey your message and create meaningful insights from data.
-            </p>
-
-
+        <div class="main">
+            <h2>More text about me</h2>
+            <p>this is a new data Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <h3>More text about me</h3>
+            <h3>bhlah blah blah blqh </h3>   
         </div>
 
-        <div class="buh">
-            <h2 class="dev">Develop what you need.</h2>
-            <div class="ved"><img id="tar" src="avatar2.jpeg" alt="avatar">I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</div>
-
-
+        <div class="leftside">
+            <p>this is a new data Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <h3>More text about me</h3>
+            <h3>bhlah blah blah blqh </h3>
         </div>
-
-        <div class="hub">
-            <h1 class="head">I can help.</h1>
-            <h2 class="out">I'm currently available for freelance work.</h2>
-            <p class="cot">If you have a project to get started, you can get in touch by clicking on the botton below. </p>
-            <br><br>
-            <div class="link">
-                <a href="mailto:teslimjimoh191@gmail.com" class="email">MESSAGE ME <i class="email"></i></a>
-
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-
+    </div>
+    
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
 </body>
 </html>

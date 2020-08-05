@@ -1,137 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    body{
-        margin: 0px;
-        color: white;
-    }
-    * {
-        box-sizing: border-box;
-    }
-    .nav{
-        display: flex;
-        background-color: black;
-    }
-    .nav a{
-        padding: 12px 20px;
-        text-decoration: none;
-        color: white;
-        text-align: center;
-    }
-    .nav a:hover{
-        background-color: orange;
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .aside{
-        flex: 30%;
-        background-color: black;
-        padding: 20px;
-    }
-    .section{
-        flex: 70%;
-        padding: 20px;
-        background-color: rgb(58, 56, 56);
-        
-    }
-    .passport{
-        max-width: 100%;
-        flex: 100%;
-        border-radius: 50%;
-    }
-    p{
-        max-width: 100%;
-    }
-    h2{
-        max-width: 100%;
-
-    }
-    .me{
-        text-align: center;
-    }
-    .twt,.gmail,.instagram,.linkedin,.medium{
-    max-width: 30px;
-    }
-    .image{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-    }
-    .orange{
-        max-width: 30%;
-        
-    }
-    @media screen and (max-width: 700px) {
-        .nav, .row{
-            flex-direction: column;
-        }
-        
-    }
-    .footer{
-        color: black;
-        background-color: rgb(194, 192, 192);
-        padding: 20px;
-        text-align: center;
-    }
+* {
+    box-sizing: border-box;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
 </style>
+</head>
 <body>
-    <div class="nav">
-        <a href="">Home</a>
-        <a href="">Project</a>
-        <a href="">Resume</a>
-        <a href="">Service</a>
-        <a href="">Memoir</a>
-    </div>
 
-    <div class="row">
-        <div class="aside">
-            <h1 class="me">About Me</h1>
-        <div class="passport">
-            <img class="passport" src="passsport.JPG" alt="passsport">
-        </div>
-        <p>I am a developer based in Kwara State, Nigeria. I am very passionate about technology and I love to develop website. i Know how to build website that would run across devices using the latest technologies available.</p>
-        <p>I am always available for freelance work.</p>
-        <br>
-        <h2>Click on the link below to get started</h2>
-        <div class="image">
-            <a class="logo1" href="https://mobile.twitter.com/Malkohm"><img class="twt" src="twitter logo.jpg" alt="twitter logo"></a>
-            <a class="logo2" href="mailto:durosayemalcolm@gmail.com"><img class="gmail" src="gmail logo.JPG" alt="gmail"></a>
-            <a class="logo3" href="https://www.instagram.com/feel4thirteen/"><img class="instagram" src="instagram logo.png" alt="instagram"></a>
-            <a class="logo4" href="https://www.linkedin.com/mwlite/in/malcolm-durosaye-6b5b12162"><img class="linkedin" src="linkedin-logo.png" alt="linkedin logo"></a>
-            <a class="logo5" href="https://medium.com/@Drichzzy"><img class="medium" src="medium1.jpg" alt="medium"></a>      
-        </div>
-        </div>
-        
-        <div class="section">
-            <h1>Title Heading</h1>
-            <h3>Title description, July 14, 2020</h3>
-            <div class="image1">
-                <img class="orange" src="orange girl.jpg" alt="">
-            </div>
-            <p>I have 2 years working experience in exploring data and algorithms using technologies like Stata, Python, IBM SPSS and Microsoft Excel. I am also passionate about Artificial Intelligence, basketball and fashion.</p>
-            <br>
-            <h1>Title Heading</h1>
-            <h3>Title description, July 14, 2020</h3>
-            <div class="image1">
-                <img class="orange" src="orange girl.jpg" alt="">
-            </div>
-            <p>I have 2 years working experience in exploring data and algorithms using technologies like Stata, Python, IBM SPSS and Microsoft Excel. I am also passionate about Artificial Intelligence, basketball and fashion.</p>       
-        </div>
-    </div>
-    <div class="footer">
-        <footer>teslim191.github.io</footer>
-    </div>
+<div class="header">
+<h1>Chania</h1>
+</div>
 
+<div class="row">
+<div class="col-3 col-m-3 menu">
+<ul>
+<li>The Flight</li>
+<li>The City</li>
+<li>The Island</li>
+<li>The Food</li>
+</ul>
+</div>
 
-    
+<div class="col-6 col-m-9" style="text-align: center;">
+<h1>The City</h1>
+<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+<h2>Analyse what you want</h2>
+                <p>I like to keep it straight and simple. My goals are to use clear visualizations to convey your message and create meaningful insights from data.</p>
+                <h2>Develop what you want</h2>
+                <p>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+                <h1>I can help.</h1>
+                <h2>I'm currently available for freelance work.</h2>
+                <p>If you have a project to get started, you can get in touch by clicking on the botton below. </p>
+<h1>Hello, I'm Jimoh Teslim</h1>
+                <h2>Front-end Web Developer and Data Analyst</h2>
+                <p>I'm a data analyst / developer based in Kwara State, Nigeria. I have a passion for data analysis and love to develop website.</p>
+                <h1>What I can do</h1>
+                <p>I like to keep it straight and simple. My goals are to use clear visualizations to convey your message and create meaningful insights from data.</p>
+                <h2>Develop what you want</h2>
+                <p>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+                <h1>I can help.</h1>
+                <h2>I'm currently available for freelance work.</h2>
+                <p>If you have a project to get started, you can get in touch by clicking on the botton below. </p>
+<h1>Hello, I'm Jimoh Teslim</h1>
+                <h2>Front-end Web Developer and Data Analyst</h2>
+                <p>I'm a data analyst / developer based in Kwara State, Nigeria. I have a passion for data analysis and love to develop website.</p>
+                <h1>What I can do</h1>
+</div>
 
-    
+<div class="col-3 col-m-12">
+<div class="aside">
+<h2>What?</h2>
+<p>Chania is a city on the island of Crete.</p>
+<h2>Where?</h2>
+<p>Crete is a Greek island in the Mediterranean Sea.</p>
+<h2>How?</h2>
+<p>You can reach Chania airport from all over Europe.</p>
+h2>What?</h2>
+<p>Chania is a city on the island of Crete.</p>
+<h2>Where?</h2>
+<p>Crete is a Greek island in the Mediterranean Sea.</p>
+<h2>How?</h2>
+<p>You can reach Chania airport from all over Europe.</p>
+<h2 style="font-size: 2em;">Front-end Web Developer and Data Analyst</h2>
+                <p style="font-size: 1.4em;">I'm a data analyst / developer based in Kwara State, Nigeria. I have a passion for data analysis and love to develop website.</p>
+                <h1 style="font-size: 2.4em;">What I can do</h1>
+                <h2>Analyse what you want</h2>
+                <p style="font-size: 1.4em;">I like to keep it straight and simple. My goals are to use clear visualizations to convey your message and create meaningful insights from data.</p>
+                <h2>Develop what you want</h2>
+                <p style="font-size: 1.4em;">I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+                <h1 style="font-size: 2.4em;">I can help.</h1>
+                <h2>I'm currently available for freelance work.</h2>
+                <p style="font-size: 1.4em;">If you have a project to get started, you can get in touch by clicking on the botton below. </p>
+
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+<p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
 </body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:42 GMT -->
 </html>

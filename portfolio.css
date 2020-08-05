@@ -1,176 +1,177 @@
-body{
-    background-color: black;
-    font-family: myFirstFont;
-    margin: 0px;
-}
-
-@font-face {
-    font-family: myFirstFont;
-    src: url(Noteworthy-Lt.ttf);
-}
-ul{
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
-    list-style-type: none;
-    overflow: hidden;
-}
-li{
-    float: left;
-
-}
-li a{
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    display: block;
-
-}
-a:hover{
-    background-color: orange;
-}
-
-h1{
-    text-align: center;
-    margin-top: 100px;
-    color: darkcyan;
-    font-size: 3em;
-    text-shadow: 0px 0px 10px gray;
-
-}
-div.passport{
-    text-align: center;
-    margin-top: 0px;
-}
-img.passport{
-    width: 35%;
-    border-radius: 50%;
-    -webkit-transition: width 5s 1s;
-    transition: width 5s 1s;
-}
-img.passport:hover{
-    width: 50%;
-}
-.container{
-    color: darkcyan;
-    font-size: 2em;
-    text-align: center;
-}
-.para{
-    color: grey;
-    font-size: 1.4em;
-    max-width: 600px;
-    text-align: center;
-    margin: auto;
-}
-.one{
-    color: darkcyan;
-    font-size: 2.4em;
-    margin-top: 50px;
-}
-.two{
-    color: darkcyan;
-    text-shadow: 0px 0px 5px;
-
-}
-.text{
-    color: grey;
-    font-size: 1.4em;
-    max-width: 650px;
-    text-align: center;
-    margin: 2px auto;
-}
-
-.hub{
-    text-align: center;
-}
-
-.dev{
-color: darkcyan;
-margin: 40px;
-text-align: center;
-
-}
-
-.ved{
-color: grey;
-font-size: 1.4em;
-max-width: 650px;
-text-align: center;
-margin: 2px auto;
-}
-
-.buh{
-    margin-top: 50px;
-}
-
-.head{
-    color: darkcyan;
-    font-size: 2.4em;
-    clear: both;
-    margin-top: 50px;
-
-}
-.out{
-    color: darkcyan;
-}
-.cot{
-    color: grey;
-    font-size: 1.4em;
-    max-width: 650px;
-    text-align: center;
-    margin: 2px auto;
-}
-
-a.email{
-    padding: 20px 20px;
-    background-color: rgb(90, 170, 255);
-    background-image: url('email.png');
-    background-repeat: no-repeat;
-    background-position: 10px 10px;
-    padding-left: 50px;
-    background-size: 40px;
-    color: white;
-    text-decoration: none;
-    text-shadow: 0px 0px 5px black;
-    display: inline-block;
-}
-a.email:active{
-    transform: translateY(4px);
-}
-@-webkit-keyframes animate{
-    0%{transform: rotate(0deg);left: 0px;}
-    25%{transform: rotate(20deg); left: 0px;}
-    50%{transform: rotate(0deg);left: 500px;}
-    55%{transform: rotate(0deg);left: 500px;}
-    75%{transform: rotate(0deg); left: 500px;}
-    100%{transform: rotate(-360deg);left: 0px;}
-}
-@keyframes animate{
-    0%{transform: rotate(0deg);left: 0px;}
-    25%{transform: rotate(20deg); left: 0px;}
-    50%{transform: rotate(0deg);left: 500px;}
-    55%{transform: rotate(0deg);left: 500px;}
-    75%{transform: rotate(0deg); left: 500px;}
-    100%{transform: rotate(-360deg);left: 0px;}
-}
-.link{
-    margin-bottom: 30px;
-    -webkit-animation: animate 5s 1;
-    animation: animate 5s 1;
-    position: relative;
-}
-a.email:hover{
-    opacity: 0.9;
-
-}
-@media screen and (max-width: 600px){
-    li {
-        float: none;
-        text-align: center;
+*{box-sizing: border-box;}
+        body{margin: 0px; color: white; background-color: black; font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 100%;}
+        .row::after{content: "";clear: both; display: block;}
+        /* select every class that begins with "col-"*/
+        [class*="col-"]{padding: 15px; float: left;}
+        .flex-container{display: flex; list-style-type: none; padding: 0px;}
+        li a{flex: 100%; padding: 12px; text-decoration: none; color: white;}
+        li a:hover{background-color: orange;}
+        h1{font-size: 4em; margin-top: 30px;}
+        h2{font-size: 2em;}
+        p{font-size: 1.2em;max-width: 500px;}
+        .footer{text-align: center; padding: 5px;}
+        .twt,.gmail,.instagram,.linkedin,.medium{
+            max-width: 30px;
+            margin-right: 30px;
+            -webkit-transition: opacity 0.5s ease-in-out;
+            -moz-transition: opacity 0.5s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0.5;
+        }
+        .twt:hover,.gmail:hover,.instagram:hover,.linkedin:hover,.medium:hover{
+            opacity: 1;
+        }    
+        /* An animation that will move the h1 from the mid-bottom to the top*/ 
+        .one{opacity: 0;animation: first 5s ease-in-out forwards;position: relative;}
+        @keyframes first{
+            0%{opacity: 0;top: 30px;}
+            100%{opacity: 1;top: 0px;}
+        }
+        /* An Animation that will move the h2 from the left hand side to the right hand side one after the other*/
+        .un{opacity: 0;animation: second 2s cubic-bezier(0.23, 1, 0.320, 1) 1.1s forwards;position: relative;}
+        @keyframes second{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .duo{opacity: 0;animation: third 2s cubic-bezier(0.23, 1, 0.320, 1) 1.2s forwards;position: relative;}
+        @keyframes third{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .tres{opacity: 0;animation: fourth 2s cubic-bezier(0.23, 1, 0.320, 1) 1.3s forwards;position: relative;}
+        @keyframes fourth{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .quart{opacity: 0;animation: fifth 2s cubic-bezier(0.23, 1, 0.320, 1) 1.4s forwards;position: relative;}
+        @keyframes fifth{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .cing{opacity: 0;animation: six 2s cubic-bezier(0.23, 1, 0.320, 1) 1.5s forwards;position: relative;}
+        @keyframes six{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .six{opacity: 0;animation: seven 2s cubic-bezier(0.23, 1, 0.320, 1) 1.6s forwards;position: relative;}
+        @keyframes seven{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .sept{opacity: 0;animation: eight 2s cubic-bezier(0.23, 1, 0.320, 1) 1.7s forwards;position: relative;}
+        @keyframes eight{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .eight{opacity: 0;animation: nine 2s cubic-bezier(0.23, 1, 0.320, 1) 1.8s forwards;position: relative;}
+        @keyframes nine{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .nine{opacity: 0;animation: ten 2s cubic-bezier(0.23, 1, 0.320, 1) 1.9s forwards;position: relative;}
+        @keyframes ten{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .ten{opacity: 0;animation: elev 2s cubic-bezier(0.23, 1, 0.320, 1) 2.0s forwards;position: relative;}
+        @keyframes elev{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .eleven{opacity: 0;animation: twelv 2s cubic-bezier(0.23, 1, 0.320, 1) 2.1s forwards;position: relative;}
+        @keyframes twelv{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .twelve{opacity: 0;animation: thir 2s cubic-bezier(0.23, 1, 0.320, 1) 2.2s forwards;position: relative;}
+        @keyframes thir{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .thirteen{opacity: 0;animation: for 2s cubic-bezier(0.23, 1, 0.320, 1) 2.3s forwards;position: relative;}
+        @keyframes for{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .fourteen{opacity: 0;animation: fif 2s cubic-bezier(0.23, 1, 0.320, 1) 2.4s forwards;position: relative;}
+        @keyframes fif{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .fifteen{opacity: 0;animation: se 2s cubic-bezier(0.23, 1, 0.320, 1) 2.5s forwards;position: relative;}
+        @keyframes se{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .sixteen{opacity: 0;animation: sev 2s cubic-bezier(0.23, 1, 0.320, 1) 2.6s forwards;position: relative;}
+        @keyframes sev{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .seventeen{opacity: 0;animation:eig 2s cubic-bezier(0.23, 1, 0.320, 1) 2.7s forwards;position: relative;}
+        @keyframes eig{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .eighteen{opacity: 0;animation: nin 2s cubic-bezier(0.23, 1, 0.320, 1) 2.8s forwards;position: relative;}
+        @keyframes nin{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .nineteen{opacity: 0;animation: twe 2s cubic-bezier(0.23, 1, 0.320, 1) 2.9s forwards;position: relative;}
+        @keyframes twe{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .twenty{opacity: 0;animation: twen 2s cubic-bezier(0.23, 1, 0.320, 1) 3s forwards;position: relative;}
+        @keyframes twen{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        .twentyone{opacity: 0;animation: hun 2s cubic-bezier(0.23, 1, 0.320, 1) 3.1s forwards;position: relative;}
+        @keyframes hun{
+            0%{opacity: 0;left: 0;}
+            100%{opacity: 1;left: 0;}
+        }
+        /* when displayed on a mobile phone*/
+        [class*="col-"]{width: 100%;}
+        @media screen and (max-width: 600px) {
+            .flex-container{flex-direction: column;}
+            li a{
+                padding: 12px 20px;
+                display: block;
+            }
+            .imogo{text-align: center;}
+        }
+        /* when displayed on a tablet*/
+        @media screen and (min-width: 600px) {
+        .col-1-m{width: 8.33%;}
+        .col-2-m{width: 16.66%;}
+        .col-3-m{width: 25%;}
+        .col-4-m{width: 33.33%;}
+        .col-5-m{width: 41.66%;}
+        .col-6-m{width: 50%;}
+        .col-7-m{width: 58.33%;}
+        .col-8-m{width: 66.66%;}
+        .col-9-m{width: 75%;}
+        .col-10-m{width: 83.33%;}
+        .col-11-m{width: 91.66%;}
+        .col-12-m{width: 100%;}
+        .passport{max-width: 100%;}
         
-    }
-     ul{
-        margin: 0px;
-    }
-} 
+        }
+        /* when displayed on a desktop*/
+        @media screen and (min-width: 700px) {
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}          
+        }

@@ -11,7 +11,8 @@ div.one{
 }
        
    body{
-        background-color: grey;
+        background: url('red\ hood.jpeg') no-repeat center fixed;
+        background-size: cover;
     }
         
     .span{

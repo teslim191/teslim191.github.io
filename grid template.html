@@ -16,7 +16,15 @@
         display: grid;
         grid-template-areas: 'header header header header header header' 'left middle middle middle middle right' 'footer footer footer footer footer footer';
         gap: 10px;
-        
+    }
+    @media screen and (max-width: 500px) {
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header header' 'left left left left left left'
+                                 'middle middle middle middle middle middle' 'right right right right right right'
+                                 'footer footer footer footer footer footer';
+            gap: 10px;
+        }
     }
 
 </style>

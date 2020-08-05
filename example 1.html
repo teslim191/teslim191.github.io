@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+        *{box-sizing: border-box;}
+        body{margin: 0px;}
+        .header{padding: 20px; background-color: silver; text-align: center;}
+        .row::after{content: "";clear: both; display: block;}
+        [class*="col-"]{padding: 15px; float: left;}
+        ul.menu{padding: 0px; margin: 0px; list-style-type: none; background-color: slateblue;}
+        li a{padding: 12px; display: block; text-decoration: none; margin-bottom: 7px;}
+        li a:hover{background-color: orange;}
+        .side{background-color: silver; padding: 5px;}
+        .main{background-color: grey; padding: 5px;}
+        .footer{text-align: center;background-color: silver; padding: 5px;}
+
+        [class*="col-"]{width: 100%;}
+
+        
+        @media screen and (min-width: 600px) {
+        .col-1-m{width: 8.33%;}
+        .col-2-m{width: 16.66%;}
+        .col-3-m{width: 25%;}
+        .col-4-m{width: 33.33%;}
+        .col-5-m{width: 41.66%;}
+        .col-6-m{width: 50%;}
+        .col-7-m{width: 58.33%;}
+        .col-8-m{width: 66.66%;}
+        .col-9-m{width: 75%;}
+        .col-10-m{width: 83.33%;}
+        .col-11-m{width: 91.66%;}
+        .col-12-m{width: 100%;}
+        
+        }
+        
+        @media screen and (min-width: 700px) {
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}          
+        }
+
+        
+
+    </style>
+    <body>
+    <div class="header">
+        <h1>Responsive Web Design</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-3-m">
+            <ul class="menu">
+               <li><a href="">Link 1</a></li>
+               <li><a href="">Link 2</a></li>
+               <li><a href="">Link 3</a></li>
+               <li><a href="">Link 4</a></li> 
+            </ul>
+        </div>
+
+        <div class="col-6 col-9-m">
+            <div class="side">
+            <p>this is a new data Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <h3>More text about me</h3>
+            <h3>bhlah blah blah blqh </h3>
+            </div>
+        </div>
+
+        <div class="col-3 col-12-m">
+            <div class="main">
+            <p>this is a new data Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+            <h3>More text about me</h3>
+            <h3>bhlah blah blah blqh </h3>  
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>footer</h2>
+    </div>
+    
+    </body>
+</html>

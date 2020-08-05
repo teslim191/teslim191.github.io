@@ -11,98 +11,146 @@
     }
     body{
         margin: 0px;
-    }
-    .header{
-        background-color: grey;
-        padding: 32px;
-        text-align: center;
-    }
-    .nav{
-        display: flex;
-        flex-wrap: wrap;
         background-color: black;
     }
-    a{
-        padding: 12px 20px;
-        text-decoration: none;
-        color: white;
+    .header{
+        background-color: black;
+        padding: 0px;
+        margin: 0px;
+        color: darkcyan;
+        text-align: center;
+        font-size: 2em;
     }
-    a:hover{
+    [class*="col-"]{
+        float: left;
+        padding: 15px;
+    }
+    .row::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .col-3 ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+     li a{
+        padding: 12px;
+        background-color: black;
+        color: darkcyan;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        display: block;
+        margin-bottom: 7px;
+        text-decoration: none;
+    }
+    li a:hover{
+        background-color: white;
+    }
+    
+    /* for mobile phone*/
+    [class*="col-"]{
+            width: 100%;
+    }
+    
+    /*for tablet*/
+     @media screen and (min-width: 600px) {
+    .col-t-1{width: 8.33%;}
+    .col-t-2{width: 16.33%;}
+    .col-t-3{width: 25%;}
+    .col-t-4{width: 33.33%;}
+    .col-t-5{width: 41.66%;}
+    .col-t-6{width: 50%;}
+    .col-t-7{width: 58.33%;}
+    .col-t-8{width: 66.66%;}
+    .col-t-9{width: 75%;}
+    .col-t-10{width: 83.33%;}
+    .col-t-11{width: 91.66%;}
+    .col-t-12{width: 100%;}   
+    }
+    /* for desktop*/
+    @media screen and (min-width: 768px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.33%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+    }
+  
+
+    a.mail{
+        text-decoration: none;
+        padding: 20px 25px;
+        color: white;
+        display: inline-block;
+        background: url('email.png') no-repeat;
+        background-position: 10px 10px;
+        background-size: 40px;
+        padding-left: 50px;
+        background-color: darkcyan;
+    }
+    a.mail:hover{
         background-color: orange;
     }
-    .section{
-        display: flex;
-        flex-wrap: wrap;
+    a.mail:active{
+        transform: translateY(4px);
     }
-    .side{
-        flex: 30%;
     
-        padding: 5px;
-        background-color: silver;
-    }
-    img{
- 
-        vertical-align: middle;
-        padding: 5px;
-    }
-    .main{
-        flex: 70%;
-        
-        padding: 5px;
 
-    }
-    .footer{
-        text-align: center;
-        background-color: silver;
-        padding: 2px;
-    }
-    @media screen and (max-width: 600px) {
-        .nav,.section{
-            flex-direction: column;
-            
-        }
-    }
 
 </style>
 <body>
     <div class="header">
-        <h1>Responsive Web Design</h1>
-        <h3>Resize the web browser</h3>
+        <h1>Welcome to my Page!</h1>
     </div>
-
-    <div class="nav">
-        <a href="">Link 1</a>
-        <a href="">Link 2</a>
-        <a href="">Link 3</a>
-        <a href="">Link 4</a>
-    </div>
-
-    <div class="section">
-        <div class="side">
-            <h2 style="">Photo</h2>
-            <img src="passsport.JPG" alt="" style="width: 60%;">
-            <p>i am an aspiring frontend web developer who is passionate about building website that can run seamlessly in all devices </p>
-            <p>i am based in Ilorin, Kwara State,Nigeria.</p>
-            <img src="image one.png" alt="" style="width: 60%;">
-            <img src="orange girl.jpg" alt="" style="width: 60%;">
-            <img src="smoke.jpeg" alt="" style="width: 60%;" >
+    <div class="row">
+        <div class="col-3 col-t-3">
+            <ul>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Resume</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </div>
-        <div class="main">
-            <h2>Breaking News....</h2>
-            <p>A new strain of the corona virus called Covid-19 was detected in the Wuhan province of China.</p>
-            <p>This virus has led to the death of about 400,000 people, with a reported two million confirmed cases </p>
-            <br>
-            <img src="covid-19 2.png" alt="" style="width: 60%;">
-            <img src="Dashboard 4.png" alt="" style="width: 60%;">
-            <p>A new strain of the corona virus called Covid-19 was detected in the Wuhan province of China.</p>
-            <p>This virus has led to the death of about 400,000 people, with a reported two million confirmed cases </p>
+    
+        <div class="col-6 col-t-9">
+            <div class="main" style="color: darkcyan;">
+                <h1 style="font-size: 3.5em;">Hello, I'm Jimoh Teslim</h1>
+                <h2 style="font-size: 2em;">Front-end Web Developer and Data Analyst</h2>
+                <p style="font-size: 1.4em;">I'm a data analyst / developer based in Kwara State, Nigeria. I have a passion for data analysis and love to develop website.</p>
+                <h1 style="font-size: 2.4em;">What I can do</h1>
+                <h2>Analyse what you want</h2>
+                <p style="font-size: 1.4em;">I like to keep it straight and simple. My goals are to use clear visualizations to convey your message and create meaningful insights from data.</p>
+                <h2>Develop what you want</h2>
+                <p style="font-size: 1.4em;">I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+                <h1 style="font-size: 2.4em;">I can help.</h1>
+                <h2>I'm currently available for freelance work.</h2>
+                <p style="font-size: 1.4em;">If you have a project to get started, you can get in touch by clicking on the botton below. </p>
 
-        </div>    
-        
+        </div>
+        </div>
+
+        <div class="col-3 col-t-12">
+            <div class="image">
+                <img src="passsport.JPG" alt="picture" style="width: 100%;border-radius: 50%; height: auto;">
+            </div> 
+        </div>
     </div>
 
-    <div class="footer">
-        <h2>Footer</h2>
+    <div class="footer" style="text-align: center;">
+        <a class="mail" href="mailto:teslimjimoh191@gmail.com">MESSAGE ME</a>
     </div>
+
+   
+    
 </body>
 </html>
