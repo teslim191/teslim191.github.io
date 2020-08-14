@@ -1,0 +1,42 @@
+    *{box-sizing: border-box;}
+    body{margin: 0px;font-size: 100%;font-family: calibri, sans-serif;background-color: rgb(241, 239, 239);}
+    img{max-width: 100%;}
+    .link{display: flex; flex-wrap: wrap;border-bottom: 2px solid navy;}
+    .link a{color: navy;padding: 12px 20px;text-decoration: none;}
+    .link a:hover{background-color: rgb(36, 192, 36);color: white;}
+    .section{display: flex;background-color: rgb(247, 244, 244);margin: 0px 30px;}
+    .section1{flex: 70%;padding: 35px;}
+    .section1 > h1{color: rgb(36, 192, 36);}
+    .section1 > h2{color: rgb(2, 2, 46);}
+    a.click{display: inline-block;text-decoration: none;background-color: rgb(36, 192, 36);padding: 5px 10px;color: white;border-radius: 5px;border: none;transition: all 0.5s;}
+    a.click:hover{background-color: orange;}
+    .section2{flex: 30%;}
+    .article{display: flex;text-align: center;}
+    .article1{flex: 100%;padding: 35px;}
+    h1.work{color: rgb(36, 192, 36);}
+    .side{display: flex;}
+    .side1,.side2,.side3{flex: 33.33%;padding: 35px}
+    a.button{background-color: rgb(36, 192, 36);padding: 10px 10px;border-radius: 5px;color: white;text-decoration: none;display: inline-block;border: none;transition: box-shadow 0.5s;}
+    a.button:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+    .note{display: flex;background-color: rgb(36, 192, 36);}
+    .note1,.note2,.note3,.note4{flex: 25%;padding: 35px;}
+    p.foot{font-size: larger;font-weight: bold;color: white;}
+    .footer{display: flex;background-color: navy;}
+    .footer1{flex: 100%;padding: 35px;}
+    .footer1 > p{color: white;font-size: larger;}
+    span+span::before{content: "|";}
+    /*mobile phone version*/
+    @media screen and (max-width: 600px) {
+        .section{flex-direction: column;}
+        .section2{display: none;}
+        .link{flex-direction: column;}
+        .side{flex-direction: column;}
+        .footer{flex-direction: column;}
+        p.foot{font-weight: bold;font-size: small;}
+    }
+    /*tablet version*/
+    @media screen and (min-width: 601px) and (max-width: 768px) {
+        .section2{display: none;}
+        .link{flex-direction: row; flex-wrap: nowrap;}
+        .link a{font-size: 0.8em;}
+    }

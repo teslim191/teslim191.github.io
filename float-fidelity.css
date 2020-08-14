@@ -1,0 +1,59 @@
+  * {box-sizing: border-box;}
+  body{margin: 0px; padding: 0px;font-size: 100%; background-color: rgb(241, 239, 239); font-family: calibri, Helvetica, sans-serif;}
+  h1{color: rgb(36, 192, 36);}
+  h1.head{color: black;}
+  h2{color: rgb(2, 2, 46);}
+  h1.work{color: rgb(36, 192, 36);}
+  .side{background: rgb(247, 244, 244) url('greenman.png') no-repeat;background-size: 300px;background-position-x: right;padding: 35px;}
+  img.green{max-width: 100%;}
+  a.click{display: inline-block;text-decoration: none;background-color: rgb(36, 192, 36);padding: 5px 10px;color: white;border-radius: 5px;border: none;transition: all 0.5s;}
+  a.click:hover{background-color: orange;}
+  a.button{background-color: rgb(36, 192, 36);padding: 10px 10px;border-radius: 5px;color: white;text-decoration: none;display: inline-block;border: none;transition: box-shadow 0.5s;}
+  a.button:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);}
+  .row::after{content: "";clear: both;display: block;}
+  img{max-width: 100%;}
+  .col-1{width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}  
+  [class*="col-"]{padding: 15px;float: left;}
+  [class*="menu"]{padding: 0px;margin: 0px;list-style-type: none;border-bottom: 2px solid navy;}
+  li{float: left;}
+  li a{display: block;text-decoration: none;padding: 12px 20px;color: navy;}
+  li a:hover{background-color: rgb(36, 192, 36);color: white;}
+  img.vac{opacity: 0.3;transition: opacity 0.5s;}
+  img.vac:hover{opacity: 1;}
+  h3.foot{color: white;}
+  span+span::before{content: "|";}
+  .footer2{background-color: navy;padding: 10px;color: white;font-size: 1.25em;}
+
+  /*for mobile phone*/
+  @media screen and (max-width: 650px) {
+    li{float: none;}
+    li a:hover{background-color: rgb(36, 192, 36);color: white;}
+    .side{background-image: none;}
+    .col-1-m{width: 8.33%;}
+    .col-2-m{width: 16.66%;}
+    .col-3-m{width: 25%;}
+    .col-4-m{width: 33.33%;}
+    .col-5-m{width: 41.66%;}
+    .col-6-m{width: 50%;}
+    .col-7-m{width: 58.33%;}
+    .col-8-m{width: 66.66%;}
+    .col-9-m{width: 75%;}
+    .col-10-m{width: 83.33%;}
+    .col-11-m{width: 91.66%;}
+    .col-12-m{width: 100%;text-align: center;}  
+  }
+  /* for tablet*/
+  @media screen and (min-width: 651px) and (max-width: 900px) {
+    li{float: none;}
+  }
