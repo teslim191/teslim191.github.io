@@ -1,9 +1,11 @@
     *{box-sizing: border-box;}
     body{margin: 0px;font-size: 100%;font-family: calibri, sans-serif;background-color: rgb(241, 239, 239);}
-    img{max-width: 100%;}
-    .link{display: flex; flex-wrap: wrap;border-bottom: 2px solid navy;}
-    .link a{color: navy;padding: 12px 20px;text-decoration: none;}
-    .link a:hover{background-color: rgb(36, 192, 36);color: white;}
+    img{max-width: 100%;height: auto;}
+    .link{display: flex; flex-wrap: nowrap;border-bottom: 2px solid navy;}
+    .first{flex: 100%;}
+    .start{flex: 100%;}
+    .link a{color: navy;padding: 10px;text-decoration: none;}
+    .link a:hover:not(.first){background-color: rgb(36, 192, 36);color: white;}
     .section{display: flex;background-color: rgb(247, 244, 244);margin: 0px 30px;}
     .section1{flex: 70%;}
     .section1 > h1{color: rgb(36, 192, 36);}
@@ -34,6 +36,7 @@
         .side{flex-direction: column;}
         .footer{flex-direction: column;}
         p.foot{font-weight: bold;font-size: small;}
+        .image{max-width: 50%;}
     }
     /*tablet version*/
     @media screen and (min-width: 601px) and (max-width: 768px) {
