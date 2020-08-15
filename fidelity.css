@@ -1,7 +1,7 @@
     *{box-sizing: border-box;}
     body{margin: 0px;font-size: 100%;font-family: calibri, sans-serif;background-color: rgb(241, 239, 239);}
     img{max-width: 100%;height: auto;}
-    .link{display: flex; flex-wrap: nowrap;border-bottom: 2px solid navy;}
+    .link{display: flex; flex-wrap: nowrap;border-bottom: 2px solid navy;margin: 0px;}
     .first{flex: 100%;}
     .start{flex: 100%;}
     .link a{color: navy;padding: 10px;text-decoration: none;}
@@ -36,7 +36,6 @@
         .side{flex-direction: column;}
         .footer{flex-direction: column;}
         p.foot{font-weight: bold;font-size: small;}
-        .image{max-width: 50%;}
     }
     /*tablet version*/
     @media screen and (min-width: 601px) and (max-width: 768px) {
