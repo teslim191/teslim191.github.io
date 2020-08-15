@@ -31,7 +31,7 @@
   li a:hover{background-color: rgb(36, 192, 36);color: white;}
   img.vac{opacity: 0.3;transition: opacity 0.5s;}
   img.vac:hover{opacity: 1;}
-  h3.foot{color: white;padding: 0px;}
+  h3.foot{color: white;}
   span+span::before{content: "|";}
   .footer2{background-color: navy;padding: 10px;color: white;font-size: 1.25em;}
 
