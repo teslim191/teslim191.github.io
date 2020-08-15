@@ -24,7 +24,7 @@
     .footer{display: flex;background-color: navy;}
     .footer1{flex: 100%;padding: 15px;}
     .footer1 > p{color: white;font-size: larger;}
-    .head+p{text-align: justify;}
+    .head+p{text-align: left;}
     span+span::before{content: "|";}
     /*mobile phone version*/
     @media screen and (max-width: 600px) {
