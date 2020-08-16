@@ -19,11 +19,11 @@
     .side{display: flex;text-align: center;}
     .side1,.side2,.side3{flex: 100%;padding: 15px;}
     div.word{max-width: 100%;}
-    a.button{display: inline-block;text-decoration: none;color: rgb(36, 192, 36);}
+    a.button{display: inline-block;text-decoration: none;color: rgb(36, 192, 36);font-size: 1.5em;}
     a.button:hover{text-decoration: underline;}
     .note{display: flex;background-color: rgb(36, 192, 36);}
     .note1,.note2,.note3,.note4{flex: 100%;padding: 15px;}
-    p.foot{font-size: larger;font-weight: bold;color: white;}
+    p.foot{font-size: large;font-weight: bold;color: white;}
     .footer{display: flex;background-color: navy;}
     .footer1{flex: 100%;padding: 15px;}
     .footer1 > p{color: white;font-size: larger;}
