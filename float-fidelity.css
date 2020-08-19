@@ -4,7 +4,7 @@
   h1.head{color: black;}
   h3{color: rgb(2, 2, 46);}
   h1.work{color: rgb(36, 192, 36);}
-  .side{background: rgb(247, 244, 244) url('cartoon.png') no-repeat;background-size: 200px;background-position-x: right;padding: 10px;}
+  .side{background-color: rgb(247, 244, 244);margin: 0px;}
   img.green{max-width: 100%;}
   a.click{display: inline-block;text-decoration: none;background-color: rgb(36, 192, 36);padding: 5px 10px;color: white;border-radius: 5px;border: none;transition: all 0.5s;font-size: 30px;}
   a.click:hover{background-color: orange;}
@@ -53,6 +53,7 @@
     .col-12-m{width: 100%;} 
     .col-12-y{width: 100%;text-align: center;} 
     .right{width: 100%;}
+    
   }
 
   /* for tablet*/

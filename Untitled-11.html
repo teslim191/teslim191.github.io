@@ -6,33 +6,141 @@
     <title>Document</title>
 </head>
 <style>
-.grid-container{
-    display: grid;
-    background-color: blue;
-    width: 900px;
-    height: 900px;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    gap: 10px 20px;
-}
-.grid-container>div{
-    background-color: cornflowerblue;
-    text-align: center;
-    font-size: 30px;
-    padding: 10px;
-    border: 1px solid black;
-}
+    .container{
+        display: grid;
+        grid-template-areas: 'logo logo menu menu menu menu'
+        'body body body body side side'
+        'section section section section section section'
+        'left left center center right right'
+        'content1 content1 content2 content2 content3 content4 '
+        'footer footer footer footer footer footer';
+        gap: 10px;
+    }
+    .logo{grid-area: logo;}
+    .menu{grid-area: menu;}
+    .menu a{padding: 12px 20px;text-decoration: none;}
+    .body{grid-area: body;padding: 10px;max-width: 100%;}
+    .side{grid-area: side;}
+    .section{grid-area: section;}
+    .left{grid-area: left;}
+    .center{grid-area: center;}
+    .right{grid-area: right;}
+    .content1{grid-area: content1;}
+    .content2{grid-area: content2;}
+    .content3{grid-area: content3;}
+    .content4{grid-area: content4;}
+    .footer{grid-area: footer;}
+    img{max-width: 100%;}
+    
+    @media screen and (max-width: 600px) {
+        .container{display: grid;}
+        div.side{display: none;}
+        .container{grid-template-areas: 'logo logo logo logo logo logo''menu menu menu menu menu menu ''body body body body body body''section section section section section section'
+        'left left left left left left''center center center center center center''right right right right right right''content1 content1 content2 content2 content3 content4'
+        'footer footer footer footer footer footer';}
+        .menu a:hover{background-color: green;}
+        .menu a{display: block;}
+    } 
+    @media screen and (min-width: 601px) and (max-width: 768px) {
+        .menu a{justify-self: end;}
+    }
 
 </style>
 <body>
-    <div class="grid-container">
-        <div class="grid-items1">1</div>
-        <div class="grid-items">2</div>
-        <div class="grid-items">3</div>
-        <div class="grid-items">4</div>
-        <div class="grid-items">5</div>
-        <div class="grid-items">6</div>
-     
+    <div class="container">
+        <div class="logo">
+      <a href=""><img src="Capture.PNG" alt="" width="100px" height="40px"></a>
+      </div>
+          
+      <div class="menu">
+      <a href="">Home</a></li>
+      <a href="">About Us</a></li>
+      <a href="">Bank with Us</a></li>
+      <a href="">Vacancies</a></li>
+      <a href="">Contact</a></li>
+      <a href="">Sign In</a></li>
+      <a href="">Register</a></li>
+        </div>
+
+        <div class="body">
+        <h1 class="one">Innovate. Distrupt. Deliver.</h1>
+        <h3>We Are Hiring For Our Digital Trainee Program.</h3>
+        <h3>Have What it Takes?</h3>
+        <h3><a href="" class="click">Click Here</a> To Apply</h3>
+        </div>
+        <div class="side">
+            <img class="green" src="cartoon.png" alt="" width="200px" height="250px">
+        </div>
+        
+        <div class="section">
+            <h1 class="work">Working With Fidelity Bank</h1>
+        <p>If working with a team of highly successful people who are making a positive difference in our business and our community ranks topmost in your mind, look no further as Fidelity Bank offers you an exceptional career opportunity to achieve great things! At Fidelity, we are proud of our many feats but we take special pride in our people and aspirations set in our shared values, visionand mission.</p>
+        <p>As a member of te Fidelity team, you are afforded the opportunity to share in these lofty aspirations, develop the required skills and expertise to excel in your preferred career path and make a positive contribution to the growth and expansion of our business as well as the development of our host communities.</p>
+        <p>We provide an environment filled with exciting challenges challenges that require innovative solutions. In view of this, we seek to unearth the best talents from individuals with the right business. This will help us maintain the position to always keeping our promises to our customers and the communities we serve</p>
+        </div>
+        
+        <div class="left">
+            <img src="sub_culture.jpg" alt="">
+          <div class="desc">
+            <h1 class="head">Our Culture and Values</h1>
+            <p>To qualify as a member of team Fidelity, a candidate is expected to possess three vital statistics, with the acronym TAC</p>
+            <p><a class="button" href="">Learn More»</a></p>
+          </div>
+        </div>
+
+        <div class="center">
+            <img src="sub_grate_place.jpg" alt="">
+          <div class="desc">
+            <h1 class="head">A Great Place To Work</h1>
+            <p>Fidelity Bank is repeatedly is repeatedly recognised as a Great Place to Work. You dont just work in a team, you live the Fidelity dream!</p>
+            <p><a class="button" href="">Learn More»</a></p>
+          </div>
+        </div>
+
+        <div class="right">
+            <img src="sub_vacancies.jpg" alt="">
+          <div class="desc">
+            <h1 class="head">Current Vacancies</h1>
+            <p>On our site, you will find all current vacancies within the organisation.</p>
+            <p><a class="button" href="">Learn More»</a></p>
+          </div>
+        </div>
+
+        <div class="content1">
+            <a href=""><img class="vac" src="question.png" alt=""></a>
+            <div class="desc">
+            <h3 class="foot">Frequently Asked Questions</h3>
+            </div>
+        </div>
+       
+        <div class="content2">
+            <a href=""><img class="vac" src="location(1).png" alt=""></a>
+            <div class="desc">
+            <h3 class="foot">Find a Branch or ATM</h3>
+            </div>
+        </div>
+         <div class="content3">
+            <a href=""><img class="vac" src="whistle.png" alt=""></a>
+            <div class="desc">
+            <h3 class="foot">Whistle Blowing</h3>
+            </div>
+        </div>
+
+        <div class="content4">
+            <a href=""><img class="vac" src="contact.png" alt=""></a>
+            <div class="desc">
+            <h3 class="foot">Contact Us</h3>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>RC 103022</p>
+            <P>Copyright 2017 Fidelity Bank Plc. An authorised financial services and credit provider.</P>
+            <p><span>Website Terms & Conditions</span><span>Disclaimer, Privacy & Security</span> <span>Access to information</span> <span>Language Policy</span> <span>Regulations & Compliance</span> </p>
+      
+        </div>
+
+
     </div>
 </body>
 </html>

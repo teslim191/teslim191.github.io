@@ -37,6 +37,7 @@
         .side{flex-direction: column;}
         .footer{flex-direction: column;}
         p.foot{font-weight: bold;font-size: small;}
+        .work~p{font-size: small;}
     }
     /*tablet version*/
     @media screen and (min-width: 601px) and (max-width: 768px) {
