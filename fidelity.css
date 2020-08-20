@@ -18,7 +18,7 @@
     h1.work{color: rgb(36, 192, 36);}
     .side{display: flex;text-align: center;}
     .side1,.side2,.side3{flex: 100%;padding: 15px;}
-    div.word{max-width: 100%;}
+    p.word
     a.button{display: inline-block;text-decoration: none;color: rgb(36, 192, 36);font-size: 1.5em;}
     a.button:hover{text-decoration: underline;}
     .note{display: flex;background-color: rgb(36, 192, 36);}
